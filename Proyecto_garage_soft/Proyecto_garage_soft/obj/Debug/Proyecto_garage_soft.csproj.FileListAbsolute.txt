@@ -1,0 +1,14 @@
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\bin\Debug\Proyecto_garage_soft.exe.config
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\bin\Debug\Proyecto_garage_soft.exe
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\bin\Debug\Proyecto_garage_soft.pdb
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.Form1.resources
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.Properties.Resources.resources
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.exe
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.pdb
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.menu_principal.resources
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.vehiculos_administrar.resources
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.formulario_usuario.resources
+C:\Users\ASUS\source\repos\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.Usuario_Login.resources
