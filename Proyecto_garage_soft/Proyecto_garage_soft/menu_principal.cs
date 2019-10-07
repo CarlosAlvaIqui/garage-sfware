@@ -52,5 +52,24 @@ namespace Proyecto_garage_soft
             va.Show();
             this.Hide();
         }
+
+        private void Label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            Form1 fm = new Form1();
+            fm.Show();
+            this.Hide();
+        }
+
+        private void BtnBuscarAuto_Click(object sender, EventArgs e)
+        {
+            vehiculos_administrar fm = new vehiculos_administrar();
+            fm.Show();
+            this.Hide();
+        }
     }
 }

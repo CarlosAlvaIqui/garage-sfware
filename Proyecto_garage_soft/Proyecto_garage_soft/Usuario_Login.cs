@@ -26,5 +26,17 @@ namespace Proyecto_garage_soft
         {
 
         }
+
+        private void BunifuCustomLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            menu_principal fm = new menu_principal();
+            fm.Show();
+            this.Hide();
+        }
     }
 }
