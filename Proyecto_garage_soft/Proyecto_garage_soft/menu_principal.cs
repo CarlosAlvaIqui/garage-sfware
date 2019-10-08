@@ -62,13 +62,79 @@ namespace Proyecto_garage_soft
         {
             Form1 fm = new Form1();
             fm.Show();
-            this.Hide();
         }
 
         private void BtnBuscarAuto_Click(object sender, EventArgs e)
         {
             vehiculos_administrar fm = new vehiculos_administrar();
             fm.Show();
+            this.Hide();
+        }
+
+        private void Menu_principal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FlowLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FlowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BunifuSwitch1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FlowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Pl_menu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            historial his = new historial();
+            his.Show();
             this.Hide();
         }
     }

@@ -43,5 +43,15 @@ namespace Proyecto_garage_soft
         {
 
         }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void BunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

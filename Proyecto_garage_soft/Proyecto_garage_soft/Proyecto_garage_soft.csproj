@@ -63,6 +63,12 @@
     <Compile Include="formulario_usuario.Designer.cs">
       <DependentUpon>formulario_usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="historial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="historial.Designer.cs">
+      <DependentUpon>historial.cs</DependentUpon>
+    </Compile>
     <Compile Include="menu_principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formulario_usuario.resx">
       <DependentUpon>formulario_usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="historial.resx">
+      <DependentUpon>historial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menu_principal.resx">
       <DependentUpon>menu_principal.cs</DependentUpon>

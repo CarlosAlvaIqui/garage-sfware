@@ -28,3 +28,19 @@ E:\Paginas Web\garage soft\garage-sfware-master\Proyecto_garage_soft\Proyecto_ga
 E:\Paginas Web\garage soft\garage-sfware-master\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.pdb
 E:\Paginas Web\garage soft\garage-sfware-master\Proyecto_garage_soft\Proyecto_garage_soft\bin\Debug\Bunifu_UI_v1.5.3.dll
 E:\Paginas Web\garage soft\garage-sfware-master\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.csproj.CopyComplete
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\bin\Debug\Proyecto_garage_soft.exe.config
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\bin\Debug\Proyecto_garage_soft.exe
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\bin\Debug\Proyecto_garage_soft.pdb
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.csprojAssemblyReference.cache
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.Form1.resources
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.formulario_usuario.resources
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.menu_principal.resources
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.Properties.Resources.resources
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.Usuario_Login.resources
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.vehiculos_administrar.resources
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.csproj.GenerateResource.cache
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.csproj.CoreCompileInputs.cache
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.csproj.CopyComplete
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.exe
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.pdb
+E:\ESTACIONAMIENTO\garage-sfware\Proyecto_garage_soft\Proyecto_garage_soft\obj\Debug\Proyecto_garage_soft.historial.resources
