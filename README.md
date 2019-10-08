@@ -1,8 +1,8 @@
-## ||||||||||||||||||||||||||| DEL DUEÑO DEL ESTACIONAMIENTO |||||||||||||||||||||||||||||||||||||||||||||
-# Login
+# ||||||||||||||||||||||||||| DEL DUEÑO DEL ESTACIONAMIENTO |||||||||||||||||||||||||||||||||||||||||||||
+## Login
 	Inicio de sesion
 	Sin registrarse
-# DASHBOARD (Ventanita principal)		NUEVO CLIENTE - CAMARAS - SITIOS - TARIFA POR HORA
+## DASHBOARD (Ventanita principal)		NUEVO CLIENTE - CAMARAS - SITIOS - TARIFA POR HORA
 	DASHBOARD
 		VER AUTOS SALIENTES Y ENTRANTES
 		SALDO GANADO
@@ -19,7 +19,7 @@
 		BUSCAR
 	SALIR
 
-# NUEVO CLIENTE
+## NUEVO CLIENTE
 	PLACA
 		SI YA ESTA QUE RELLENE TODO
 	TIPO DE VEHICULO
@@ -29,19 +29,19 @@
 	PAGA
 	DESCRIPCION DEL AUTO
 
-# CAMARAS
+## CAMARAS
 	RELLENO
 
-# SITIOS
+## SITIOS
 	UN MAPA CON LOS CAMPOS MARCADOS DISPONIBLES Y NO DE ESE DIA
 
 
-## ||||||||||||||||||||||||||| ADMINISTRADOR |||||||||||||||||||||||||||||||||||||||||||||
+# ||||||||||||||||||||||||||| ADMINISTRADOR |||||||||||||||||||||||||||||||||||||||||||||
 
-# LOGIN
+## LOGIN
 	INICIO DE SESION
-# DASHBOARD
+## DASHBOARD
 	NUEVOS USUARIOS
 
-## INDICAR SI TIENEN ALGUNA SUGERENCIA ACA ABAJO
+# INDICAR SI TIENEN ALGUNA SUGERENCIA ACA ABAJO
 	
