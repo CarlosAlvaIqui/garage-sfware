@@ -43,5 +43,14 @@
 ## DASHBOARD
 	NUEVOS USUARIOS
 
+# ||||||||||||||||||||||||| Base de datos insertadas |||||||||||||||||||||||||||||||| 
+
+sugerencias abajo es 
+
+![Base Datos](estacionamiento.sql)
+
+
+
+-----------------------------------------------------------------------------------------
 # INDICAR SI TIENEN ALGUNA SUGERENCIA ACA ABAJO
 	

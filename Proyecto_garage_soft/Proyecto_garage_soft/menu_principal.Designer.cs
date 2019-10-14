@@ -159,7 +159,7 @@
             this.bunifuFlatButton5.BackColor = System.Drawing.SystemColors.HotTrack;
             this.bunifuFlatButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton5.BorderRadius = 0;
-            this.bunifuFlatButton5.ButtonText = "Salir";
+            this.bunifuFlatButton5.ButtonText = "              Salir";
             this.bunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton5.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -184,7 +184,7 @@
             this.bunifuFlatButton5.selected = false;
             this.bunifuFlatButton5.Size = new System.Drawing.Size(233, 52);
             this.bunifuFlatButton5.TabIndex = 13;
-            this.bunifuFlatButton5.Text = "Salir";
+            this.bunifuFlatButton5.Text = "              Salir";
             this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton5.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton5.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -220,7 +220,7 @@
             this.bunifuFlatButton4.BackColor = System.Drawing.SystemColors.HotTrack;
             this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton4.BorderRadius = 0;
-            this.bunifuFlatButton4.ButtonText = "Registrados";
+            this.bunifuFlatButton4.ButtonText = "              Registrados";
             this.bunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -236,7 +236,7 @@
             this.bunifuFlatButton4.IconVisible = true;
             this.bunifuFlatButton4.IconZoom = 90D;
             this.bunifuFlatButton4.IsTab = false;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(4, 390);
+            this.bunifuFlatButton4.Location = new System.Drawing.Point(0, 393);
             this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
             this.bunifuFlatButton4.Normalcolor = System.Drawing.SystemColors.HotTrack;
@@ -245,7 +245,7 @@
             this.bunifuFlatButton4.selected = false;
             this.bunifuFlatButton4.Size = new System.Drawing.Size(233, 52);
             this.bunifuFlatButton4.TabIndex = 12;
-            this.bunifuFlatButton4.Text = "Registrados";
+            this.bunifuFlatButton4.Text = "              Registrados";
             this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton4.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -256,7 +256,7 @@
             this.btnBuscarAuto.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBuscarAuto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBuscarAuto.BorderRadius = 0;
-            this.btnBuscarAuto.ButtonText = "Estadisticas";
+            this.btnBuscarAuto.ButtonText = "              Estadisticas";
             this.btnBuscarAuto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarAuto.DisabledColor = System.Drawing.Color.Gray;
             this.btnBuscarAuto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -281,7 +281,7 @@
             this.btnBuscarAuto.selected = false;
             this.btnBuscarAuto.Size = new System.Drawing.Size(233, 52);
             this.btnBuscarAuto.TabIndex = 11;
-            this.btnBuscarAuto.Text = "Estadisticas";
+            this.btnBuscarAuto.Text = "              Estadisticas";
             this.btnBuscarAuto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarAuto.Textcolor = System.Drawing.Color.White;
             this.btnBuscarAuto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -293,7 +293,7 @@
             this.bunifuFlatButton2.BackColor = System.Drawing.SystemColors.HotTrack;
             this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "Historial";
+            this.bunifuFlatButton2.ButtonText = "              Historial";
             this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -318,7 +318,7 @@
             this.bunifuFlatButton2.selected = false;
             this.bunifuFlatButton2.Size = new System.Drawing.Size(233, 52);
             this.bunifuFlatButton2.TabIndex = 10;
-            this.bunifuFlatButton2.Text = "Historial";
+            this.bunifuFlatButton2.Text = "              Historial";
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -343,7 +343,7 @@
             this.bunifuFlatButton1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "DashBoard";
+            this.bunifuFlatButton1.ButtonText = "              DashBoard";
             this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -368,7 +368,7 @@
             this.bunifuFlatButton1.selected = false;
             this.bunifuFlatButton1.Size = new System.Drawing.Size(233, 52);
             this.bunifuFlatButton1.TabIndex = 9;
-            this.bunifuFlatButton1.Text = "DashBoard";
+            this.bunifuFlatButton1.Text = "              DashBoard";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
