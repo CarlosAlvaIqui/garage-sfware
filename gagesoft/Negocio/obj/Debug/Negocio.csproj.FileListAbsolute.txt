@@ -1,0 +1,8 @@
+C:\Users\ASUS\source\repos\gagesoft\Negocio\bin\Debug\Negocio.dll
+C:\Users\ASUS\source\repos\gagesoft\Negocio\bin\Debug\Negocio.pdb
+C:\Users\ASUS\source\repos\gagesoft\Negocio\bin\Debug\Datos.dll
+C:\Users\ASUS\source\repos\gagesoft\Negocio\bin\Debug\Datos.pdb
+C:\Users\ASUS\source\repos\gagesoft\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\gagesoft\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\ASUS\source\repos\gagesoft\Negocio\obj\Debug\Negocio.dll
+C:\Users\ASUS\source\repos\gagesoft\Negocio\obj\Debug\Negocio.pdb
