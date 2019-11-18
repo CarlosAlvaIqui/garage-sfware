@@ -31,12 +31,20 @@ namespace Presentacion
 
         private void btnBusquedasss_Click(object sender, EventArgs e)
         {
-            busqueda_autos ba = new busqueda_autos();
-            ba.Show();
+            /*busqueda_autos ba = new busqueda_autos();
+            ba.Show();*/
+            formulario_empleado fe = new formulario_empleado();
+            fe.Show();
         }
 
         private void btnclo_Click(object sender, EventArgs e)
         {
+        }
+
+        private void btncreateus_Click(object sender, EventArgs e)
+        {
+            formulario_empleado fe = new formulario_empleado();
+            fe.Show();
         }
     }
 }

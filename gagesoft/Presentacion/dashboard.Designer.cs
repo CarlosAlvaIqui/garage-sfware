@@ -67,7 +67,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnAutoss = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btncreateus = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnBusquedasss = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
@@ -669,7 +669,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.btnAutoss);
-            this.panel5.Controls.Add(this.bunifuThinButton25);
+            this.panel5.Controls.Add(this.btncreateus);
             this.panel5.Controls.Add(this.btnBusquedasss);
             this.panel5.Controls.Add(this.bunifuThinButton24);
             this.panel5.Location = new System.Drawing.Point(240, 0);
@@ -704,30 +704,31 @@
             this.btnAutoss.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAutoss.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
-            // bunifuThinButton25
+            // btncreateus
             // 
-            this.bunifuThinButton25.ActiveBorderThickness = 1;
-            this.bunifuThinButton25.ActiveCornerRadius = 20;
-            this.bunifuThinButton25.ActiveFillColor = System.Drawing.SystemColors.HotTrack;
-            this.bunifuThinButton25.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton25.ActiveLineColor = System.Drawing.SystemColors.HotTrack;
-            this.bunifuThinButton25.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton25.BackgroundImage")));
-            this.bunifuThinButton25.ButtonText = "Contact";
-            this.bunifuThinButton25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton25.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.bunifuThinButton25.IdleBorderThickness = 1;
-            this.bunifuThinButton25.IdleCornerRadius = 20;
-            this.bunifuThinButton25.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton25.IdleForecolor = System.Drawing.SystemColors.HotTrack;
-            this.bunifuThinButton25.IdleLineColor = System.Drawing.SystemColors.HotTrack;
-            this.bunifuThinButton25.Location = new System.Drawing.Point(367, 7);
-            this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton25.Name = "bunifuThinButton25";
-            this.bunifuThinButton25.Size = new System.Drawing.Size(104, 42);
-            this.bunifuThinButton25.TabIndex = 11;
-            this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btncreateus.ActiveBorderThickness = 1;
+            this.btncreateus.ActiveCornerRadius = 20;
+            this.btncreateus.ActiveFillColor = System.Drawing.SystemColors.HotTrack;
+            this.btncreateus.ActiveForecolor = System.Drawing.Color.White;
+            this.btncreateus.ActiveLineColor = System.Drawing.SystemColors.HotTrack;
+            this.btncreateus.BackColor = System.Drawing.Color.White;
+            this.btncreateus.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncreateus.BackgroundImage")));
+            this.btncreateus.ButtonText = "Contact";
+            this.btncreateus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncreateus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncreateus.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btncreateus.IdleBorderThickness = 1;
+            this.btncreateus.IdleCornerRadius = 20;
+            this.btncreateus.IdleFillColor = System.Drawing.Color.White;
+            this.btncreateus.IdleForecolor = System.Drawing.SystemColors.HotTrack;
+            this.btncreateus.IdleLineColor = System.Drawing.SystemColors.HotTrack;
+            this.btncreateus.Location = new System.Drawing.Point(367, 7);
+            this.btncreateus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btncreateus.Name = "btncreateus";
+            this.btncreateus.Size = new System.Drawing.Size(104, 42);
+            this.btncreateus.TabIndex = 11;
+            this.btncreateus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btncreateus.Click += new System.EventHandler(this.btncreateus_Click);
             // 
             // btnBusquedasss
             // 
@@ -862,7 +863,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAutoss;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
+        private Bunifu.Framework.UI.BunifuThinButton2 btncreateus;
         private Bunifu.Framework.UI.BunifuThinButton2 btnBusquedasss;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
     }

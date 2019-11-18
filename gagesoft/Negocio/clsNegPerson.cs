@@ -17,6 +17,10 @@ namespace Negocio
 
             return daoperson.GetAll();
         }*/
+        public void insertSOMETHING(string a, string b, string c, string d, string e, int f, int g, string h, float i)
+        {
+            daoperson.insertSOMETHING(a, b,c,d,e,f,g,h,i);
+        }
 
     }
 }
