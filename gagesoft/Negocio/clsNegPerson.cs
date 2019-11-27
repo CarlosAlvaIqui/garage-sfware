@@ -21,6 +21,19 @@ namespace Negocio
         {
             daoperson.insertSOMETHING(a, b,c,d,e,f,g,h,i);
         }
+        public void insertcars(string pl, string ti, string des) {
+            daoperson.insertcars(pl, ti, des);
+            }
+
+        public DataTable GetAllcars()
+        {
+            return daoperson.GetAllcars();
+        }
+
+        public DataTable findcars(String pa)
+        {
+            return daoperson.findcars(pa);
+        }
 
     }
 }

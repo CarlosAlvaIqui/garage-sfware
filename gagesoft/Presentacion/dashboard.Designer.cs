@@ -36,7 +36,7 @@
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnBuscarAuto = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -69,7 +69,7 @@
             this.btnAutoss = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btncreateus = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnBusquedasss = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnsitios = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -93,7 +93,7 @@
             this.panel1.Controls.Add(this.bunifuThinButton23);
             this.panel1.Controls.Add(this.bunifuFlatButton4);
             this.panel1.Controls.Add(this.btnBuscarAuto);
-            this.panel1.Controls.Add(this.bunifuFlatButton2);
+            this.panel1.Controls.Add(this.btn);
             this.panel1.Controls.Add(this.bunifuImageButton1);
             this.panel1.Controls.Add(this.bunifuFlatButton1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -256,41 +256,41 @@
             this.btnBuscarAuto.Textcolor = System.Drawing.Color.White;
             this.btnBuscarAuto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // bunifuFlatButton2
+            // btn
             // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.SystemColors.Highlight;
-            this.bunifuFlatButton2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "              Historial";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 90D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(2, 288);
-            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.SystemColors.HotTrack;
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.SystemColors.Highlight;
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(233, 52);
-            this.bunifuFlatButton2.TabIndex = 19;
-            this.bunifuFlatButton2.Text = "              Historial";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn.Activecolor = System.Drawing.SystemColors.Highlight;
+            this.btn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn.BorderRadius = 0;
+            this.btn.ButtonText = "              Historial";
+            this.btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn.DisabledColor = System.Drawing.Color.Gray;
+            this.btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn.Iconimage")));
+            this.btn.Iconimage_right = null;
+            this.btn.Iconimage_right_Selected = null;
+            this.btn.Iconimage_Selected = null;
+            this.btn.IconMarginLeft = 0;
+            this.btn.IconMarginRight = 0;
+            this.btn.IconRightVisible = true;
+            this.btn.IconRightZoom = 0D;
+            this.btn.IconVisible = true;
+            this.btn.IconZoom = 90D;
+            this.btn.IsTab = false;
+            this.btn.Location = new System.Drawing.Point(2, 288);
+            this.btn.Margin = new System.Windows.Forms.Padding(5);
+            this.btn.Name = "btn";
+            this.btn.Normalcolor = System.Drawing.SystemColors.HotTrack;
+            this.btn.OnHovercolor = System.Drawing.SystemColors.Highlight;
+            this.btn.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn.selected = false;
+            this.btn.Size = new System.Drawing.Size(233, 52);
+            this.btn.TabIndex = 19;
+            this.btn.Text = "              Historial";
+            this.btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn.Textcolor = System.Drawing.Color.White;
+            this.btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // bunifuImageButton1
             // 
@@ -671,7 +671,7 @@
             this.panel5.Controls.Add(this.btnAutoss);
             this.panel5.Controls.Add(this.btncreateus);
             this.panel5.Controls.Add(this.btnBusquedasss);
-            this.panel5.Controls.Add(this.bunifuThinButton24);
+            this.panel5.Controls.Add(this.btnsitios);
             this.panel5.Location = new System.Drawing.Point(240, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
@@ -756,30 +756,31 @@
             this.btnBusquedasss.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnBusquedasss.Click += new System.EventHandler(this.btnBusquedasss_Click);
             // 
-            // bunifuThinButton24
+            // btnsitios
             // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.SystemColors.HotTrack;
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.SystemColors.HotTrack;
-            this.bunifuThinButton24.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "Sitios";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton24.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.SystemColors.HotTrack;
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.SystemColors.HotTrack;
-            this.bunifuThinButton24.Location = new System.Drawing.Point(240, 10);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(119, 39);
-            this.bunifuThinButton24.TabIndex = 10;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnsitios.ActiveBorderThickness = 1;
+            this.btnsitios.ActiveCornerRadius = 20;
+            this.btnsitios.ActiveFillColor = System.Drawing.SystemColors.HotTrack;
+            this.btnsitios.ActiveForecolor = System.Drawing.Color.White;
+            this.btnsitios.ActiveLineColor = System.Drawing.SystemColors.HotTrack;
+            this.btnsitios.BackColor = System.Drawing.Color.White;
+            this.btnsitios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsitios.BackgroundImage")));
+            this.btnsitios.ButtonText = "Agregar Usuarios";
+            this.btnsitios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsitios.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsitios.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnsitios.IdleBorderThickness = 1;
+            this.btnsitios.IdleCornerRadius = 20;
+            this.btnsitios.IdleFillColor = System.Drawing.Color.White;
+            this.btnsitios.IdleForecolor = System.Drawing.SystemColors.HotTrack;
+            this.btnsitios.IdleLineColor = System.Drawing.SystemColors.HotTrack;
+            this.btnsitios.Location = new System.Drawing.Point(240, 10);
+            this.btnsitios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnsitios.Name = "btnsitios";
+            this.btnsitios.Size = new System.Drawing.Size(119, 39);
+            this.btnsitios.TabIndex = 10;
+            this.btnsitios.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnsitios.Click += new System.EventHandler(this.btnsitios_Click);
             // 
             // dashboard
             // 
@@ -832,7 +833,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
         private Bunifu.Framework.UI.BunifuFlatButton btnBuscarAuto;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
+        private Bunifu.Framework.UI.BunifuFlatButton btn;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -865,6 +866,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnAutoss;
         private Bunifu.Framework.UI.BunifuThinButton2 btncreateus;
         private Bunifu.Framework.UI.BunifuThinButton2 btnBusquedasss;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnsitios;
     }
 }

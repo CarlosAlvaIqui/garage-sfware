@@ -227,6 +227,7 @@
             this.label2.Size = new System.Drawing.Size(184, 41);
             this.label2.TabIndex = 0;
             this.label2.Text = "Bienvenido ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btncreateaccount
             // 
@@ -246,7 +247,7 @@
             this.btncreateaccount.IdleFillColor = System.Drawing.Color.White;
             this.btncreateaccount.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btncreateaccount.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btncreateaccount.Location = new System.Drawing.Point(650, 816);
+            this.btncreateaccount.Location = new System.Drawing.Point(653, 816);
             this.btncreateaccount.Margin = new System.Windows.Forms.Padding(5);
             this.btncreateaccount.Name = "btncreateaccount";
             this.btncreateaccount.Size = new System.Drawing.Size(262, 73);

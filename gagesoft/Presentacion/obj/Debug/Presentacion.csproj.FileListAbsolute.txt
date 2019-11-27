@@ -39,3 +39,5 @@ D:\proyectos\software\pr_cm\1\garage-sfware\gagesoft\Presentacion\obj\Debug\Pres
 D:\proyectos\software\pr_cm\1\garage-sfware\gagesoft\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 D:\proyectos\software\pr_cm\1\garage-sfware\gagesoft\Presentacion\obj\Debug\Presentacion.exe
 D:\proyectos\software\pr_cm\1\garage-sfware\gagesoft\Presentacion\obj\Debug\Presentacion.pdb
+D:\proyectos\software\pr_cm\1\garage-sfware\gagesoft\Presentacion\obj\Debug\Presentacion.formularios_carros.resources
+D:\proyectos\software\pr_cm\1\garage-sfware\gagesoft\Presentacion\obj\Debug\Presentacion.formulaio_busquedad.resources

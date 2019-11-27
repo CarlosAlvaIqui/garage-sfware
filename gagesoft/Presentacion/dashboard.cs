@@ -24,17 +24,16 @@ namespace Presentacion
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            autos_form af = new autos_form();
+            formularios_carros af = new formularios_carros();
             af.Show();
-            this.Close();
         }
 
         private void btnBusquedasss_Click(object sender, EventArgs e)
         {
             /*busqueda_autos ba = new busqueda_autos();
             ba.Show();*/
-            formulario_empleado fe = new formulario_empleado();
-            fe.Show();
+            formulaio_busquedad fb = new formulaio_busquedad();
+            fb.Show();  
         }
 
         private void btnclo_Click(object sender, EventArgs e)
@@ -42,6 +41,12 @@ namespace Presentacion
         }
 
         private void btncreateus_Click(object sender, EventArgs e)
+        {
+            formulario_empleado fe = new formulario_empleado();
+            fe.Show();
+        }
+
+        private void btnsitios_Click(object sender, EventArgs e)
         {
             formulario_empleado fe = new formulario_empleado();
             fe.Show();

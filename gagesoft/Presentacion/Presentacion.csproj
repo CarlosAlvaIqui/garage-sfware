@@ -81,6 +81,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formulaio_busquedad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulaio_busquedad.Designer.cs">
+      <DependentUpon>formulaio_busquedad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_carros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_carros.Designer.cs">
+      <DependentUpon>formularios_carros.cs</DependentUpon>
+    </Compile>
     <Compile Include="formulario_empleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +121,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formulaio_busquedad.resx">
+      <DependentUpon>formulaio_busquedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_carros.resx">
+      <DependentUpon>formularios_carros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formulario_empleado.resx">
       <DependentUpon>formulario_empleado.cs</DependentUpon>
