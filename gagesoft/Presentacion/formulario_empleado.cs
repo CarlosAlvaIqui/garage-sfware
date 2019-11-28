@@ -24,10 +24,9 @@ namespace Presentacion
 
         private void btncreateaccount_Click(object sender, EventArgs e)
         {
-            clsNegPerson np = new clsNegPerson();
-          /*  var getint = dguvpro.SelectedRows[0].Cells[0].Value.ToString();
-            var fech = dtpickfecha.Text;*/
-            //1@usuario,2@contraseña,3@ubicacion,4@nombre_estaciona,5@nombre,6@dni,7@celular,8@tipo,9@cobro_hora
+
+
+           /* clsNegPerson np = new clsNegPerson();
 
             var userr = txtchagetext.text;
             var contraseña = txtContra.text;
@@ -42,17 +41,17 @@ namespace Presentacion
 
             MessageBox.Show("Se guardo correctamente" + userr);
             np.insertSOMETHING(userr,contraseña,ubi,nomesta,nom,dni,cel,tip, cobrohora);
-            /*
-            Det_com dtes = new Det_com();
-            dtes.getidpro = getint;
-
-            dtes.Show();
-            */
+           */
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void bunifuTextbox1_OnTextChange(object sender, EventArgs e)
+        {
+
         }
     }
 }

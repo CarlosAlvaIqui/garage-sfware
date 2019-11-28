@@ -51,5 +51,15 @@ namespace Presentacion
             formulario_empleado fe = new formulario_empleado();
             fe.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnEstadisticas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

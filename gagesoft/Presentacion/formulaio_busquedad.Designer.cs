@@ -44,7 +44,7 @@
             this.txtBusquennoma.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtBusquennoma.ForeColor = System.Drawing.Color.DodgerBlue;
             this.txtBusquennoma.Icon = ((System.Drawing.Image)(resources.GetObject("txtBusquennoma.Icon")));
-            this.txtBusquennoma.Location = new System.Drawing.Point(33, 56);
+            this.txtBusquennoma.Location = new System.Drawing.Point(42, 83);
             this.txtBusquennoma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBusquennoma.Name = "txtBusquennoma";
             this.txtBusquennoma.Size = new System.Drawing.Size(707, 59);
@@ -142,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 681);
+            this.ClientSize = new System.Drawing.Size(1081, 225);
             this.Controls.Add(this.btnclosewi);
             this.Controls.Add(this.dgvcarsworks);
             this.Controls.Add(this.btnlistarmecars);

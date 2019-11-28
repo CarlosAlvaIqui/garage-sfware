@@ -29,12 +29,22 @@ namespace Presentacion
 
         private void btnbusqueda_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            clsNegPerson np = new clsNegPerson();
-            dt = np.findcars(txtBusquennoma.text);
+            if (txtBusquennoma.text == "")
+            {
+                MessageBox.Show("Escribe algo");
+            }
+            else {
+                Size = new Size(850, 683);
 
-            dgvcarsworks.DataSource = dt;
-            dgvcarsworks.Refresh();
+                DataTable dt = new DataTable();
+                clsNegPerson np = new clsNegPerson();
+                dt = np.findcars(txtBusquennoma.text);
+
+                dgvcarsworks.DataSource = dt;
+                dgvcarsworks.Refresh();
+
+
+            }
         }
 
         private void btnclosewi_Click(object sender, EventArgs e)

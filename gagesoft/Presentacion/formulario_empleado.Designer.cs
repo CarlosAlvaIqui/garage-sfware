@@ -30,13 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formulario_empleado));
             this.label1 = new System.Windows.Forms.Label();
-            this.txtcobro = new Bunifu.Framework.UI.BunifuTextbox();
             this.txttipo = new Bunifu.Framework.UI.BunifuTextbox();
-            this.txtcel = new Bunifu.Framework.UI.BunifuTextbox();
-            this.txrDni = new Bunifu.Framework.UI.BunifuTextbox();
             this.txtNomb = new Bunifu.Framework.UI.BunifuTextbox();
-            this.txtNombreesta = new Bunifu.Framework.UI.BunifuTextbox();
-            this.txtUbicacion = new Bunifu.Framework.UI.BunifuTextbox();
             this.txtContra = new Bunifu.Framework.UI.BunifuTextbox();
             this.txtchagetext = new Bunifu.Framework.UI.BunifuTextbox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -44,6 +39,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btncreateaccount = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
+            this.bunifuTextbox2 = new Bunifu.Framework.UI.BunifuTextbox();
+            this.bunifuTextbox3 = new Bunifu.Framework.UI.BunifuTextbox();
+            this.bunifuTextbox4 = new Bunifu.Framework.UI.BunifuTextbox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,20 +55,6 @@
             this.label1.Size = new System.Drawing.Size(273, 32);
             this.label1.TabIndex = 21;
             this.label1.Text = "Crear Cuenta Empleado";
-            // 
-            // txtcobro
-            // 
-            this.txtcobro.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtcobro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtcobro.BackgroundImage")));
-            this.txtcobro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtcobro.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txtcobro.Icon = ((System.Drawing.Image)(resources.GetObject("txtcobro.Icon")));
-            this.txtcobro.Location = new System.Drawing.Point(586, 748);
-            this.txtcobro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtcobro.Name = "txtcobro";
-            this.txtcobro.Size = new System.Drawing.Size(400, 59);
-            this.txtcobro.TabIndex = 20;
-            this.txtcobro.text = "Cobro por Hora";
             // 
             // txttipo
             // 
@@ -85,34 +70,6 @@
             this.txttipo.TabIndex = 19;
             this.txttipo.text = "Tipo";
             // 
-            // txtcel
-            // 
-            this.txtcel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtcel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtcel.BackgroundImage")));
-            this.txtcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtcel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txtcel.Icon = ((System.Drawing.Image)(resources.GetObject("txtcel.Icon")));
-            this.txtcel.Location = new System.Drawing.Point(586, 585);
-            this.txtcel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtcel.Name = "txtcel";
-            this.txtcel.Size = new System.Drawing.Size(400, 59);
-            this.txtcel.TabIndex = 18;
-            this.txtcel.text = "Celular";
-            // 
-            // txrDni
-            // 
-            this.txrDni.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txrDni.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txrDni.BackgroundImage")));
-            this.txrDni.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txrDni.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txrDni.Icon = ((System.Drawing.Image)(resources.GetObject("txrDni.Icon")));
-            this.txrDni.Location = new System.Drawing.Point(586, 502);
-            this.txrDni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txrDni.Name = "txrDni";
-            this.txrDni.Size = new System.Drawing.Size(400, 59);
-            this.txrDni.TabIndex = 17;
-            this.txrDni.text = "Dni";
-            // 
             // txtNomb
             // 
             this.txtNomb.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -120,40 +77,12 @@
             this.txtNomb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtNomb.ForeColor = System.Drawing.Color.DodgerBlue;
             this.txtNomb.Icon = ((System.Drawing.Image)(resources.GetObject("txtNomb.Icon")));
-            this.txtNomb.Location = new System.Drawing.Point(586, 421);
+            this.txtNomb.Location = new System.Drawing.Point(586, 260);
             this.txtNomb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNomb.Name = "txtNomb";
             this.txtNomb.Size = new System.Drawing.Size(400, 59);
             this.txtNomb.TabIndex = 16;
             this.txtNomb.text = "Nombre";
-            // 
-            // txtNombreesta
-            // 
-            this.txtNombreesta.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNombreesta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtNombreesta.BackgroundImage")));
-            this.txtNombreesta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtNombreesta.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txtNombreesta.Icon = ((System.Drawing.Image)(resources.GetObject("txtNombreesta.Icon")));
-            this.txtNombreesta.Location = new System.Drawing.Point(586, 336);
-            this.txtNombreesta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtNombreesta.Name = "txtNombreesta";
-            this.txtNombreesta.Size = new System.Drawing.Size(400, 59);
-            this.txtNombreesta.TabIndex = 15;
-            this.txtNombreesta.text = "Nombre Estacionamiento";
-            // 
-            // txtUbicacion
-            // 
-            this.txtUbicacion.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtUbicacion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtUbicacion.BackgroundImage")));
-            this.txtUbicacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtUbicacion.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txtUbicacion.Icon = ((System.Drawing.Image)(resources.GetObject("txtUbicacion.Icon")));
-            this.txtUbicacion.Location = new System.Drawing.Point(586, 257);
-            this.txtUbicacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtUbicacion.Name = "txtUbicacion";
-            this.txtUbicacion.Size = new System.Drawing.Size(400, 59);
-            this.txtUbicacion.TabIndex = 14;
-            this.txtUbicacion.text = "Ubicacion";
             // 
             // txtContra
             // 
@@ -192,7 +121,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(515, 903);
+            this.panel1.Size = new System.Drawing.Size(515, 824);
             this.panel1.TabIndex = 11;
             // 
             // label4
@@ -247,7 +176,7 @@
             this.btncreateaccount.IdleFillColor = System.Drawing.Color.White;
             this.btncreateaccount.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btncreateaccount.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btncreateaccount.Location = new System.Drawing.Point(653, 816);
+            this.btncreateaccount.Location = new System.Drawing.Point(650, 746);
             this.btncreateaccount.Margin = new System.Windows.Forms.Padding(5);
             this.btncreateaccount.Name = "btncreateaccount";
             this.btncreateaccount.Size = new System.Drawing.Size(262, 73);
@@ -255,20 +184,76 @@
             this.btncreateaccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btncreateaccount.Click += new System.EventHandler(this.btncreateaccount_Click);
             // 
+            // bunifuTextbox1
+            // 
+            this.bunifuTextbox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuTextbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.BackgroundImage")));
+            this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuTextbox1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
+            this.bunifuTextbox1.Location = new System.Drawing.Point(586, 344);
+            this.bunifuTextbox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextbox1.Name = "bunifuTextbox1";
+            this.bunifuTextbox1.Size = new System.Drawing.Size(400, 59);
+            this.bunifuTextbox1.TabIndex = 22;
+            this.bunifuTextbox1.text = "Apellido";
+            this.bunifuTextbox1.OnTextChange += new System.EventHandler(this.bunifuTextbox1_OnTextChange);
+            // 
+            // bunifuTextbox2
+            // 
+            this.bunifuTextbox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuTextbox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox2.BackgroundImage")));
+            this.bunifuTextbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuTextbox2.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuTextbox2.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox2.Icon")));
+            this.bunifuTextbox2.Location = new System.Drawing.Point(586, 423);
+            this.bunifuTextbox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextbox2.Name = "bunifuTextbox2";
+            this.bunifuTextbox2.Size = new System.Drawing.Size(400, 59);
+            this.bunifuTextbox2.TabIndex = 23;
+            this.bunifuTextbox2.text = "Email";
+            // 
+            // bunifuTextbox3
+            // 
+            this.bunifuTextbox3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuTextbox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox3.BackgroundImage")));
+            this.bunifuTextbox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuTextbox3.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuTextbox3.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox3.Icon")));
+            this.bunifuTextbox3.Location = new System.Drawing.Point(586, 504);
+            this.bunifuTextbox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextbox3.Name = "bunifuTextbox3";
+            this.bunifuTextbox3.Size = new System.Drawing.Size(400, 59);
+            this.bunifuTextbox3.TabIndex = 24;
+            this.bunifuTextbox3.text = "Direccion";
+            // 
+            // bunifuTextbox4
+            // 
+            this.bunifuTextbox4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuTextbox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox4.BackgroundImage")));
+            this.bunifuTextbox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuTextbox4.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuTextbox4.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox4.Icon")));
+            this.bunifuTextbox4.Location = new System.Drawing.Point(586, 585);
+            this.bunifuTextbox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuTextbox4.Name = "bunifuTextbox4";
+            this.bunifuTextbox4.Size = new System.Drawing.Size(400, 59);
+            this.bunifuTextbox4.TabIndex = 25;
+            this.bunifuTextbox4.text = "cargo";
+            // 
             // formulario_empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1056, 903);
+            this.ClientSize = new System.Drawing.Size(1056, 824);
+            this.Controls.Add(this.bunifuTextbox4);
+            this.Controls.Add(this.bunifuTextbox3);
+            this.Controls.Add(this.bunifuTextbox2);
+            this.Controls.Add(this.bunifuTextbox1);
             this.Controls.Add(this.btncreateaccount);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtcobro);
             this.Controls.Add(this.txttipo);
-            this.Controls.Add(this.txtcel);
-            this.Controls.Add(this.txrDni);
             this.Controls.Add(this.txtNomb);
-            this.Controls.Add(this.txtNombreesta);
-            this.Controls.Add(this.txtUbicacion);
             this.Controls.Add(this.txtContra);
             this.Controls.Add(this.txtchagetext);
             this.Controls.Add(this.panel1);
@@ -287,13 +272,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuTextbox txtcobro;
         private Bunifu.Framework.UI.BunifuTextbox txttipo;
-        private Bunifu.Framework.UI.BunifuTextbox txtcel;
-        private Bunifu.Framework.UI.BunifuTextbox txrDni;
         private Bunifu.Framework.UI.BunifuTextbox txtNomb;
-        private Bunifu.Framework.UI.BunifuTextbox txtNombreesta;
-        private Bunifu.Framework.UI.BunifuTextbox txtUbicacion;
         private Bunifu.Framework.UI.BunifuTextbox txtContra;
         private Bunifu.Framework.UI.BunifuTextbox txtchagetext;
         private System.Windows.Forms.Panel panel1;
@@ -301,5 +281,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuThinButton2 btncreateaccount;
+        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
+        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox2;
+        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox3;
+        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox4;
     }
 }
