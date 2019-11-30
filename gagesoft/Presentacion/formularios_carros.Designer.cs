@@ -31,12 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formularios_carros));
             this.label1 = new System.Windows.Forms.Label();
             this.txtDescrip = new Bunifu.Framework.UI.BunifuTextbox();
-            this.txtTipoam = new Bunifu.Framework.UI.BunifuTextbox();
             this.txtplacasa = new Bunifu.Framework.UI.BunifuTextbox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnregisauto = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtPropietario = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txtcomcar = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,26 +58,12 @@
             this.txtDescrip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtDescrip.ForeColor = System.Drawing.Color.DodgerBlue;
             this.txtDescrip.Icon = ((System.Drawing.Image)(resources.GetObject("txtDescrip.Icon")));
-            this.txtDescrip.Location = new System.Drawing.Point(567, 293);
+            this.txtDescrip.Location = new System.Drawing.Point(567, 216);
             this.txtDescrip.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDescrip.Name = "txtDescrip";
             this.txtDescrip.Size = new System.Drawing.Size(400, 59);
             this.txtDescrip.TabIndex = 25;
             this.txtDescrip.text = "Descripcion";
-            // 
-            // txtTipoam
-            // 
-            this.txtTipoam.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtTipoam.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtTipoam.BackgroundImage")));
-            this.txtTipoam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtTipoam.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txtTipoam.Icon = ((System.Drawing.Image)(resources.GetObject("txtTipoam.Icon")));
-            this.txtTipoam.Location = new System.Drawing.Point(567, 216);
-            this.txtTipoam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtTipoam.Name = "txtTipoam";
-            this.txtTipoam.Size = new System.Drawing.Size(400, 59);
-            this.txtTipoam.TabIndex = 24;
-            this.txtTipoam.text = "Tipo";
             // 
             // txtplacasa
             // 
@@ -100,7 +87,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(532, 508);
+            this.panel1.Size = new System.Drawing.Size(532, 594);
             this.panel1.TabIndex = 22;
             // 
             // label3
@@ -145,7 +132,7 @@
             this.btnregisauto.IdleFillColor = System.Drawing.Color.White;
             this.btnregisauto.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnregisauto.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnregisauto.Location = new System.Drawing.Point(623, 403);
+            this.btnregisauto.Location = new System.Drawing.Point(639, 465);
             this.btnregisauto.Margin = new System.Windows.Forms.Padding(5);
             this.btnregisauto.Name = "btnregisauto";
             this.btnregisauto.Size = new System.Drawing.Size(262, 73);
@@ -153,15 +140,41 @@
             this.btnregisauto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnregisauto.Click += new System.EventHandler(this.btnregisauto_Click);
             // 
+            // txtPropietario
+            // 
+            this.txtPropietario.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPropietario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPropietario.BackgroundImage")));
+            this.txtPropietario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtPropietario.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txtPropietario.Icon = ((System.Drawing.Image)(resources.GetObject("txtPropietario.Icon")));
+            this.txtPropietario.Location = new System.Drawing.Point(567, 301);
+            this.txtPropietario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPropietario.Name = "txtPropietario";
+            this.txtPropietario.Size = new System.Drawing.Size(400, 59);
+            this.txtPropietario.TabIndex = 33;
+            this.txtPropietario.text = "Propietario";
+            // 
+            // txtcomcar
+            // 
+            this.txtcomcar.FormattingEnabled = true;
+            this.txtcomcar.Items.AddRange(new object[] {
+            "Carro",
+            "Moto"});
+            this.txtcomcar.Location = new System.Drawing.Point(567, 403);
+            this.txtcomcar.Name = "txtcomcar";
+            this.txtcomcar.Size = new System.Drawing.Size(400, 24);
+            this.txtcomcar.TabIndex = 34;
+            // 
             // formularios_carros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 508);
+            this.ClientSize = new System.Drawing.Size(1035, 594);
+            this.Controls.Add(this.txtcomcar);
+            this.Controls.Add(this.txtPropietario);
             this.Controls.Add(this.btnregisauto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtDescrip);
-            this.Controls.Add(this.txtTipoam);
             this.Controls.Add(this.txtplacasa);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -180,11 +193,12 @@
 
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuTextbox txtDescrip;
-        private Bunifu.Framework.UI.BunifuTextbox txtTipoam;
         private Bunifu.Framework.UI.BunifuTextbox txtplacasa;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuThinButton2 btnregisauto;
+        private Bunifu.Framework.UI.BunifuTextbox txtPropietario;
+        private System.Windows.Forms.ComboBox txtcomcar;
     }
 }

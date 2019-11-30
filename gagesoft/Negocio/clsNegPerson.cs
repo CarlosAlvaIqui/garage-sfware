@@ -17,14 +17,18 @@ namespace Negocio
 
             return daoperson.GetAll();
         }*/
-        public void insertSOMETHING(string a, string b, string c, string d, string e, int f, int g, string h, float i)
+        public void insertSOMETHING(string a, string b, string c, string d, string e, string f, string g, int i)
         {
-            daoperson.insertSOMETHING(a, b,c,d,e,f,g,h,i);
+            daoperson.insertSOMETHING(a, b,c,d,e,f,g,i);
         }
-        public void insertcars(string pl, string ti, string des) {
-            daoperson.insertcars(pl, ti, des);
+        public void insertcars(string pl, string des, string pro, int tp) {
+            daoperson.insertcars(pl,des, pro,tp);
             }
-
+        public bool IniciarSesion(string AliasUsuario, string Contraseña)
+        {
+            return daoperson.IniciarSesion(AliasUsuario,Contraseña);
+             
+        }
         public DataTable GetAllcars()
         {
             return daoperson.GetAllcars();

@@ -42,7 +42,7 @@
             this.txtdireccion = new Bunifu.Framework.UI.BunifuTextbox();
             this.txtcargo = new Bunifu.Framework.UI.BunifuTextbox();
             this.txtApellido = new Bunifu.Framework.UI.BunifuTextbox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtcombo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -226,23 +226,23 @@
             this.txtApellido.TabIndex = 26;
             this.txtApellido.text = "Apellido";
             // 
-            // comboBox1
+            // txtcombo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.txtcombo.FormattingEnabled = true;
+            this.txtcombo.Items.AddRange(new object[] {
             "Admin",
             "Normal"});
-            this.comboBox1.Location = new System.Drawing.Point(586, 678);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(400, 24);
-            this.comboBox1.TabIndex = 27;
+            this.txtcombo.Location = new System.Drawing.Point(586, 678);
+            this.txtcombo.Name = "txtcombo";
+            this.txtcombo.Size = new System.Drawing.Size(400, 24);
+            this.txtcombo.TabIndex = 27;
             // 
             // formulario_empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1056, 824);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtcombo);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtcargo);
             this.Controls.Add(this.txtdireccion);
@@ -280,6 +280,6 @@
         private Bunifu.Framework.UI.BunifuTextbox txtdireccion;
         private Bunifu.Framework.UI.BunifuTextbox txtcargo;
         private Bunifu.Framework.UI.BunifuTextbox txtApellido;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox txtcombo;
     }
 }

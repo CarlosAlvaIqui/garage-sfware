@@ -12,7 +12,7 @@ namespace Datos
         public SqlConnection con;
         public clsDao()
         {
-            string str = "Server=DESKTOP-FPS8BOT\\SQLEXPRESS2017;DataBase=db_garagesoft;Integrated Security=true;";
+            string str = "Server=DESKTOP-FPS8BOT\\SQLEXPRESS2017;DataBase=softwaregarege_db;Integrated Security=true;";
             con = new SqlConnection(str);
         }
     }

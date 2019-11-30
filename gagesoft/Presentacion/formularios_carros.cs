@@ -32,12 +32,24 @@ namespace Presentacion
             clsNegPerson np = new clsNegPerson();
          
             var placa = txtplacasa.text;
-            var tipo = txtTipoam.text;
             var descripcion = txtDescrip.text;
+            var propietario = txtPropietario.text;
+            var tipoauto = 0;
+
+            if (txtcomcar.Text == "Carro") {
+                tipoauto = 1;
+            } else if (txtcomcar.Text == "Moto") {
+                tipoauto = 2;
+            }
+            else {
+                tipoauto = 3;
+            }
+
+
 
 
             MessageBox.Show("Se guardo correctamente" + placa);
-            np.insertcars(placa, tipo, descripcion);
+            np.insertcars(placa, descripcion,propietario,tipoauto);
         }
 
         private void label2_Click(object sender, EventArgs e)

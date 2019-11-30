@@ -70,6 +70,7 @@
             this.btncreateus = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnBusquedasss = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnsitios = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -670,14 +671,15 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.comboBox1);
             this.panel5.Controls.Add(this.btnAutoss);
             this.panel5.Controls.Add(this.btncreateus);
             this.panel5.Controls.Add(this.btnBusquedasss);
             this.panel5.Controls.Add(this.btnsitios);
-            this.panel5.Location = new System.Drawing.Point(267, 0);
+            this.panel5.Location = new System.Drawing.Point(269, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1179, 57);
+            this.panel5.Size = new System.Drawing.Size(1177, 57);
             this.panel5.TabIndex = 26;
             // 
             // btnAutoss
@@ -784,6 +786,14 @@
             this.btnsitios.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnsitios.Click += new System.EventHandler(this.btnsitios_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(515, 13);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(264, 24);
+            this.comboBox1.TabIndex = 12;
+            // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -869,5 +879,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btncreateus;
         private Bunifu.Framework.UI.BunifuThinButton2 btnBusquedasss;
         private Bunifu.Framework.UI.BunifuThinButton2 btnsitios;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
