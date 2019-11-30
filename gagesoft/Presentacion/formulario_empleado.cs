@@ -25,7 +25,6 @@ namespace Presentacion
         private void btncreateaccount_Click(object sender, EventArgs e)
         {
 
-
            /* clsNegPerson np = new clsNegPerson();
 
             var userr = txtchagetext.text;

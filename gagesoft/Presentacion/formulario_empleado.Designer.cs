@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formulario_empleado));
             this.label1 = new System.Windows.Forms.Label();
-            this.txttipo = new Bunifu.Framework.UI.BunifuTextbox();
             this.txtNomb = new Bunifu.Framework.UI.BunifuTextbox();
             this.txtContra = new Bunifu.Framework.UI.BunifuTextbox();
             this.txtchagetext = new Bunifu.Framework.UI.BunifuTextbox();
@@ -39,10 +38,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btncreateaccount = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuTextbox2 = new Bunifu.Framework.UI.BunifuTextbox();
-            this.bunifuTextbox3 = new Bunifu.Framework.UI.BunifuTextbox();
-            this.bunifuTextbox4 = new Bunifu.Framework.UI.BunifuTextbox();
-            this.Apellido = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txtemail = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txtdireccion = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txtcargo = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txtApellido = new Bunifu.Framework.UI.BunifuTextbox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,20 +55,6 @@
             this.label1.Size = new System.Drawing.Size(273, 32);
             this.label1.TabIndex = 21;
             this.label1.Text = "Crear Cuenta Empleado";
-            // 
-            // txttipo
-            // 
-            this.txttipo.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txttipo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txttipo.BackgroundImage")));
-            this.txttipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txttipo.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txttipo.Icon = ((System.Drawing.Image)(resources.GetObject("txttipo.Icon")));
-            this.txttipo.Location = new System.Drawing.Point(586, 666);
-            this.txttipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txttipo.Name = "txttipo";
-            this.txttipo.Size = new System.Drawing.Size(400, 59);
-            this.txttipo.TabIndex = 19;
-            this.txttipo.text = "Tipo";
             // 
             // txtNomb
             // 
@@ -184,74 +170,85 @@
             this.btncreateaccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btncreateaccount.Click += new System.EventHandler(this.btncreateaccount_Click);
             // 
-            // bunifuTextbox2
+            // txtemail
             // 
-            this.bunifuTextbox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuTextbox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox2.BackgroundImage")));
-            this.bunifuTextbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuTextbox2.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox2.Icon")));
-            this.bunifuTextbox2.Location = new System.Drawing.Point(586, 423);
-            this.bunifuTextbox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuTextbox2.Name = "bunifuTextbox2";
-            this.bunifuTextbox2.Size = new System.Drawing.Size(400, 59);
-            this.bunifuTextbox2.TabIndex = 23;
-            this.bunifuTextbox2.text = "Email";
+            this.txtemail.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtemail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtemail.BackgroundImage")));
+            this.txtemail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtemail.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txtemail.Icon = ((System.Drawing.Image)(resources.GetObject("txtemail.Icon")));
+            this.txtemail.Location = new System.Drawing.Point(586, 423);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(400, 59);
+            this.txtemail.TabIndex = 23;
+            this.txtemail.text = "Email";
             // 
-            // bunifuTextbox3
+            // txtdireccion
             // 
-            this.bunifuTextbox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuTextbox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox3.BackgroundImage")));
-            this.bunifuTextbox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuTextbox3.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox3.Icon")));
-            this.bunifuTextbox3.Location = new System.Drawing.Point(586, 504);
-            this.bunifuTextbox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuTextbox3.Name = "bunifuTextbox3";
-            this.bunifuTextbox3.Size = new System.Drawing.Size(400, 59);
-            this.bunifuTextbox3.TabIndex = 24;
-            this.bunifuTextbox3.text = "Direccion";
+            this.txtdireccion.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtdireccion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtdireccion.BackgroundImage")));
+            this.txtdireccion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtdireccion.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txtdireccion.Icon = ((System.Drawing.Image)(resources.GetObject("txtdireccion.Icon")));
+            this.txtdireccion.Location = new System.Drawing.Point(586, 504);
+            this.txtdireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtdireccion.Name = "txtdireccion";
+            this.txtdireccion.Size = new System.Drawing.Size(400, 59);
+            this.txtdireccion.TabIndex = 24;
+            this.txtdireccion.text = "Direccion";
             // 
-            // bunifuTextbox4
+            // txtcargo
             // 
-            this.bunifuTextbox4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuTextbox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox4.BackgroundImage")));
-            this.bunifuTextbox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuTextbox4.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox4.Icon")));
-            this.bunifuTextbox4.Location = new System.Drawing.Point(586, 585);
-            this.bunifuTextbox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuTextbox4.Name = "bunifuTextbox4";
-            this.bunifuTextbox4.Size = new System.Drawing.Size(400, 59);
-            this.bunifuTextbox4.TabIndex = 25;
-            this.bunifuTextbox4.text = "cargo";
+            this.txtcargo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtcargo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtcargo.BackgroundImage")));
+            this.txtcargo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtcargo.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txtcargo.Icon = ((System.Drawing.Image)(resources.GetObject("txtcargo.Icon")));
+            this.txtcargo.Location = new System.Drawing.Point(586, 585);
+            this.txtcargo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtcargo.Name = "txtcargo";
+            this.txtcargo.Size = new System.Drawing.Size(400, 59);
+            this.txtcargo.TabIndex = 25;
+            this.txtcargo.text = "cargo";
             // 
-            // Apellido
+            // txtApellido
             // 
-            this.Apellido.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Apellido.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Apellido.BackgroundImage")));
-            this.Apellido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Apellido.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Apellido.Icon = ((System.Drawing.Image)(resources.GetObject("Apellido.Icon")));
-            this.Apellido.Location = new System.Drawing.Point(586, 337);
-            this.Apellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Apellido.Name = "Apellido";
-            this.Apellido.Size = new System.Drawing.Size(400, 59);
-            this.Apellido.TabIndex = 26;
-            this.Apellido.text = "Apellido";
+            this.txtApellido.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtApellido.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtApellido.BackgroundImage")));
+            this.txtApellido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtApellido.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txtApellido.Icon = ((System.Drawing.Image)(resources.GetObject("txtApellido.Icon")));
+            this.txtApellido.Location = new System.Drawing.Point(586, 337);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(400, 59);
+            this.txtApellido.TabIndex = 26;
+            this.txtApellido.text = "Apellido";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Admin",
+            "Normal"});
+            this.comboBox1.Location = new System.Drawing.Point(586, 678);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(400, 24);
+            this.comboBox1.TabIndex = 27;
             // 
             // formulario_empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1056, 824);
-            this.Controls.Add(this.Apellido);
-            this.Controls.Add(this.bunifuTextbox4);
-            this.Controls.Add(this.bunifuTextbox3);
-            this.Controls.Add(this.bunifuTextbox2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtcargo);
+            this.Controls.Add(this.txtdireccion);
+            this.Controls.Add(this.txtemail);
             this.Controls.Add(this.btncreateaccount);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txttipo);
             this.Controls.Add(this.txtNomb);
             this.Controls.Add(this.txtContra);
             this.Controls.Add(this.txtchagetext);
@@ -271,7 +268,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuTextbox txttipo;
         private Bunifu.Framework.UI.BunifuTextbox txtNomb;
         private Bunifu.Framework.UI.BunifuTextbox txtContra;
         private Bunifu.Framework.UI.BunifuTextbox txtchagetext;
@@ -280,9 +276,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuThinButton2 btncreateaccount;
-        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox2;
-        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox3;
-        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox4;
-        private Bunifu.Framework.UI.BunifuTextbox Apellido;
+        private Bunifu.Framework.UI.BunifuTextbox txtemail;
+        private Bunifu.Framework.UI.BunifuTextbox txtdireccion;
+        private Bunifu.Framework.UI.BunifuTextbox txtcargo;
+        private Bunifu.Framework.UI.BunifuTextbox txtApellido;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

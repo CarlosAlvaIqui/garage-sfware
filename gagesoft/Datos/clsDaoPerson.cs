@@ -115,7 +115,7 @@ namespace Datos
             SqlCommand cmd = new SqlCommand();
             //1@usuario,2@contraseña,3@ubicacion,4@nombre_estaciona,5@nombre,6@dni,7@celular,8@tipo,9@cobro_hora
             con.Open();
-            cmd.CommandText = "crearempleado";
+            cmd.CommandText = "createuserempo";
             cmd.CommandType = CommandType.StoredProcedure;//configuramos el procedimiento que usaremos
             cmd.Connection = con;
 
@@ -125,65 +125,6 @@ namespace Datos
             param.Value = a;
 
             cmd.Parameters.Add(param);
-
-            SqlParameter param2 = new SqlParameter();
-            param2.ParameterName = "@contraseña";
-            param2.SqlDbType = SqlDbType.NVarChar;
-            param2.Value = b;
-
-            cmd.Parameters.Add(param2);
-
-            SqlParameter param3 = new SqlParameter();
-            param3.ParameterName = "@ubicacion";
-            param3.SqlDbType = SqlDbType.NVarChar;
-            param3.Value = c;
-
-            cmd.Parameters.Add(param3);
-
-            SqlParameter param4 = new SqlParameter();
-            param4.ParameterName = "@nombre_estaciona";
-            param4.SqlDbType = SqlDbType.NVarChar;
-            param4.Value = d;
-
-            cmd.Parameters.Add(param4);
-
-            SqlParameter param5 = new SqlParameter();
-            param5.ParameterName = "@nombre";
-            param5.SqlDbType = SqlDbType.NVarChar;
-            param5.Value = e;
-
-            cmd.Parameters.Add(param5);
-
-
-            SqlParameter param6 = new SqlParameter();
-            param6.ParameterName = "@dni";
-            param6.SqlDbType = SqlDbType.Int;
-            param6.Value = f;
-
-            cmd.Parameters.Add(param6);
-
-            SqlParameter param7 = new SqlParameter();
-            param7.ParameterName = "@celular";
-            param7.SqlDbType = SqlDbType.Int;
-            param7.Value = g;
-
-            cmd.Parameters.Add(param7);
-
-            SqlParameter param8 = new SqlParameter();
-            param8.ParameterName = "@tipo";
-            param8.SqlDbType = SqlDbType.NVarChar;
-            param8.Value = h;
-
-            cmd.Parameters.Add(param8);
-
-
-            SqlParameter param9 = new SqlParameter();
-            param9.ParameterName = "@cobro_hora";
-            param9.SqlDbType = SqlDbType.Float;
-            param9.Value = i;
-
-            cmd.Parameters.Add(param9);
-
 
 
 
