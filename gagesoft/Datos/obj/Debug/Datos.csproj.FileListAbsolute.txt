@@ -8,3 +8,8 @@ D:\proyectos\software\pr_cm\1\garage-sfware\gagesoft\Datos\bin\Debug\Datos.pdb
 D:\proyectos\software\pr_cm\1\garage-sfware\gagesoft\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
 D:\proyectos\software\pr_cm\1\garage-sfware\gagesoft\Datos\obj\Debug\Datos.dll
 D:\proyectos\software\pr_cm\1\garage-sfware\gagesoft\Datos\obj\Debug\Datos.pdb
+D:\proyectos\software\pr_cm\3\garage-sfware\gagesoft\Datos\bin\Debug\Datos.dll
+D:\proyectos\software\pr_cm\3\garage-sfware\gagesoft\Datos\bin\Debug\Datos.pdb
+D:\proyectos\software\pr_cm\3\garage-sfware\gagesoft\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+D:\proyectos\software\pr_cm\3\garage-sfware\gagesoft\Datos\obj\Debug\Datos.dll
+D:\proyectos\software\pr_cm\3\garage-sfware\gagesoft\Datos\obj\Debug\Datos.pdb

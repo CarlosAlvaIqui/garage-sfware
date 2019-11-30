@@ -39,10 +39,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btncreateaccount = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuTextbox2 = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuTextbox3 = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuTextbox4 = new Bunifu.Framework.UI.BunifuTextbox();
+            this.Apellido = new Bunifu.Framework.UI.BunifuTextbox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -184,21 +184,6 @@
             this.btncreateaccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btncreateaccount.Click += new System.EventHandler(this.btncreateaccount_Click);
             // 
-            // bunifuTextbox1
-            // 
-            this.bunifuTextbox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuTextbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.BackgroundImage")));
-            this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(586, 344);
-            this.bunifuTextbox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuTextbox1.Name = "bunifuTextbox1";
-            this.bunifuTextbox1.Size = new System.Drawing.Size(400, 59);
-            this.bunifuTextbox1.TabIndex = 22;
-            this.bunifuTextbox1.text = "Apellido";
-            this.bunifuTextbox1.OnTextChange += new System.EventHandler(this.bunifuTextbox1_OnTextChange);
-            // 
             // bunifuTextbox2
             // 
             this.bunifuTextbox2.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -241,15 +226,29 @@
             this.bunifuTextbox4.TabIndex = 25;
             this.bunifuTextbox4.text = "cargo";
             // 
+            // Apellido
+            // 
+            this.Apellido.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Apellido.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Apellido.BackgroundImage")));
+            this.Apellido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Apellido.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.Apellido.Icon = ((System.Drawing.Image)(resources.GetObject("Apellido.Icon")));
+            this.Apellido.Location = new System.Drawing.Point(586, 337);
+            this.Apellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Apellido.Name = "Apellido";
+            this.Apellido.Size = new System.Drawing.Size(400, 59);
+            this.Apellido.TabIndex = 26;
+            this.Apellido.text = "Apellido";
+            // 
             // formulario_empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1056, 824);
+            this.Controls.Add(this.Apellido);
             this.Controls.Add(this.bunifuTextbox4);
             this.Controls.Add(this.bunifuTextbox3);
             this.Controls.Add(this.bunifuTextbox2);
-            this.Controls.Add(this.bunifuTextbox1);
             this.Controls.Add(this.btncreateaccount);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txttipo);
@@ -281,9 +280,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuThinButton2 btncreateaccount;
-        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
         private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox2;
         private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox3;
         private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox4;
+        private Bunifu.Framework.UI.BunifuTextbox Apellido;
     }
 }
