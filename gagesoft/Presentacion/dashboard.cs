@@ -61,5 +61,11 @@ namespace Presentacion
         {
 
         }
+
+        private void btnRegistrarEstacionamiento_Click(object sender, EventArgs e)
+        {
+            formulario_estacionamiento fe = new formulario_estacionamiento();
+            fe.Show();
+        }
     }
 }

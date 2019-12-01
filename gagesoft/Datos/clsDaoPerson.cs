@@ -73,6 +73,69 @@ namespace Datos
             return dt;
         }
 
+        public void insertParkings(int usid,string nl, string ubi, float tari, int luga, float sao, int ca)
+        {
+            SqlCommand cmd = new SqlCommand();
+            con.Open();
+            cmd.CommandText = "createParkingt";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = con;
+
+
+            SqlParameter param = new SqlParameter();
+            param.ParameterName = "@usuarios_id";
+            param.SqlDbType = SqlDbType.Int;
+            param.Value = usid;
+
+            cmd.Parameters.Add(param);
+
+            SqlParameter param2 = new SqlParameter();
+            param2.ParameterName = "@nombre_local";
+            param2.SqlDbType = SqlDbType.NVarChar;
+            param2.Value = nl;
+
+            cmd.Parameters.Add(param2);
+
+            SqlParameter param3 = new SqlParameter();
+            param3.ParameterName = "@ubicacion";
+            param3.SqlDbType = SqlDbType.NVarChar;
+            param3.Value = ubi;
+
+            cmd.Parameters.Add(param3);
+
+            SqlParameter param4 = new SqlParameter();
+            param4.ParameterName = "@cobroHora";
+            param4.SqlDbType = SqlDbType.Float;
+            param4.Value = tari;
+
+            cmd.Parameters.Add(param4);
+
+            SqlParameter param5 = new SqlParameter();
+            param5.ParameterName = "@lugares";
+            param5.SqlDbType = SqlDbType.Int;
+            param5.Value = luga;
+
+            cmd.Parameters.Add(param5);
+
+            SqlParameter param6 = new SqlParameter();
+            param6.ParameterName = "@saldo";
+            param6.SqlDbType = SqlDbType.Float;
+            param6.Value = sao;
+
+            cmd.Parameters.Add(param6);
+
+            SqlParameter param7 = new SqlParameter();
+            param7.ParameterName = "@coches_actuales";
+            param7.SqlDbType = SqlDbType.Int;
+            param7.Value = ca;
+
+            cmd.Parameters.Add(param7);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            con.Close();
+        }                       
+
         public void insertcars(string pl, string des, string pro, int tp)
         {
             SqlCommand cmd = new SqlCommand();
@@ -114,7 +177,7 @@ namespace Datos
 
             con.Close();
         }
-        public bool IniciarSesion(string AliasUsuario, string Contraseña)
+        public int IniciarSesion(string AliasUsuario, string Contraseña)
         {
             SqlCommand cmd = new SqlCommand();
 
@@ -131,7 +194,7 @@ namespace Datos
             int x = Convert.ToInt32(result);
             con.Close();
 
-            return x > 0;   
+            return x;   
 
 
         }

@@ -35,13 +35,17 @@ namespace Presentacion
             var user = txtUser.Text;
             var contraseña = txtPassword.Text;
             // np.IniciarSesion(user,contraseña);
-            if (np.IniciarSesion(user, contraseña))
+            int agarra = np.IniciarSesion(user, contraseña) ;
+            if (agarra != 0)
             {
-
                 var mensaje = string.Format("Bienvenido {0}", txtUser.Text);
                 dashboard dhb = new dashboard();
                 dhb.Show();
-                MessageBox.Show("Entrastes usuario : " + mensaje);
+                
+                GlobalVariablesform.usuario_id = agarra;
+
+                MessageBox.Show("Entrastes usuario : " + agarra);
+                
             }
             else {
                 MessageBox.Show("No entrastes x gil");

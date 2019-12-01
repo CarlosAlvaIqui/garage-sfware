@@ -64,3 +64,4 @@ D:\proyectos\software\pr_cm\3\garage-sfware\gagesoft\Presentacion\obj\Debug\Pres
 D:\proyectos\software\pr_cm\3\garage-sfware\gagesoft\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 D:\proyectos\software\pr_cm\3\garage-sfware\gagesoft\Presentacion\obj\Debug\Presentacion.exe
 D:\proyectos\software\pr_cm\3\garage-sfware\gagesoft\Presentacion\obj\Debug\Presentacion.pdb
+D:\proyectos\software\pr_cm\3\garage-sfware\gagesoft\Presentacion\obj\Debug\Presentacion.formulario_estacionamiento.resources

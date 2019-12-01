@@ -58,7 +58,7 @@
             this.btnbusqueda.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnbusqueda.ActiveForecolor = System.Drawing.Color.White;
             this.btnbusqueda.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnbusqueda.BackColor = System.Drawing.SystemColors.Control;
+            this.btnbusqueda.BackColor = System.Drawing.Color.Honeydew;
             this.btnbusqueda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnbusqueda.BackgroundImage")));
             this.btnbusqueda.ButtonText = "Buscar";
             this.btnbusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -84,7 +84,7 @@
             this.btnlistarmecars.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnlistarmecars.ActiveForecolor = System.Drawing.Color.White;
             this.btnlistarmecars.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnlistarmecars.BackColor = System.Drawing.SystemColors.Control;
+            this.btnlistarmecars.BackColor = System.Drawing.Color.Honeydew;
             this.btnlistarmecars.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnlistarmecars.BackgroundImage")));
             this.btnlistarmecars.ButtonText = "Listar";
             this.btnlistarmecars.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -119,7 +119,7 @@
             this.btnclosewi.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnclosewi.ActiveForecolor = System.Drawing.Color.White;
             this.btnclosewi.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnclosewi.BackColor = System.Drawing.SystemColors.Control;
+            this.btnclosewi.BackColor = System.Drawing.Color.Honeydew;
             this.btnclosewi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnclosewi.BackgroundImage")));
             this.btnclosewi.ButtonText = "Cerrrar";
             this.btnclosewi.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -142,12 +142,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(1081, 225);
             this.Controls.Add(this.btnclosewi);
             this.Controls.Add(this.dgvcarsworks);
             this.Controls.Add(this.btnlistarmecars);
             this.Controls.Add(this.btnbusqueda);
             this.Controls.Add(this.txtBusquennoma);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formulaio_busquedad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

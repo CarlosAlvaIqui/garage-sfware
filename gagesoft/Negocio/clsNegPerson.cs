@@ -8,6 +8,8 @@ using System.Data;
 
 namespace Negocio
 {
+   
+
     public class clsNegPerson
     {
         clsDaoPerson daoperson = new clsDaoPerson();
@@ -24,7 +26,13 @@ namespace Negocio
         public void insertcars(string pl, string des, string pro, int tp) {
             daoperson.insertcars(pl,des, pro,tp);
             }
-        public bool IniciarSesion(string AliasUsuario, string Contraseña)
+        public void insertParkings(int usid, string nl, string ubi, float tari, int luga, float sao, int ca)
+        {
+            daoperson.insertParkings(usid, nl, ubi, tari, luga, sao,ca);
+
+        }
+
+        public int IniciarSesion(string AliasUsuario, string Contraseña)
         {
             return daoperson.IniciarSesion(AliasUsuario,Contraseña);
              
@@ -38,6 +46,7 @@ namespace Negocio
         {
             return daoperson.findcars(pa);
         }
+        
 
     }
 }

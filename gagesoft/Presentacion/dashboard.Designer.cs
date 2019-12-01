@@ -71,6 +71,7 @@
             this.btnBusquedasss = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnsitios = new Bunifu.Framework.UI.BunifuThinButton2();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnRegistrarEstacionamiento = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -671,6 +672,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.btnRegistrarEstacionamiento);
             this.panel5.Controls.Add(this.comboBox1);
             this.panel5.Controls.Add(this.btnAutoss);
             this.panel5.Controls.Add(this.btncreateus);
@@ -726,10 +728,10 @@
             this.btncreateus.IdleFillColor = System.Drawing.Color.White;
             this.btncreateus.IdleForecolor = System.Drawing.SystemColors.HotTrack;
             this.btncreateus.IdleLineColor = System.Drawing.SystemColors.HotTrack;
-            this.btncreateus.Location = new System.Drawing.Point(367, 7);
+            this.btncreateus.Location = new System.Drawing.Point(495, 10);
             this.btncreateus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btncreateus.Name = "btncreateus";
-            this.btncreateus.Size = new System.Drawing.Size(104, 42);
+            this.btncreateus.Size = new System.Drawing.Size(104, 39);
             this.btncreateus.TabIndex = 11;
             this.btncreateus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btncreateus.Click += new System.EventHandler(this.btncreateus_Click);
@@ -789,10 +791,36 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(515, 13);
+            this.comboBox1.Location = new System.Drawing.Point(684, 25);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(264, 24);
             this.comboBox1.TabIndex = 12;
+            // 
+            // btnRegistrarEstacionamiento
+            // 
+            this.btnRegistrarEstacionamiento.ActiveBorderThickness = 1;
+            this.btnRegistrarEstacionamiento.ActiveCornerRadius = 20;
+            this.btnRegistrarEstacionamiento.ActiveFillColor = System.Drawing.SystemColors.HotTrack;
+            this.btnRegistrarEstacionamiento.ActiveForecolor = System.Drawing.Color.White;
+            this.btnRegistrarEstacionamiento.ActiveLineColor = System.Drawing.SystemColors.HotTrack;
+            this.btnRegistrarEstacionamiento.BackColor = System.Drawing.Color.White;
+            this.btnRegistrarEstacionamiento.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegistrarEstacionamiento.BackgroundImage")));
+            this.btnRegistrarEstacionamiento.ButtonText = "Estacionamiento";
+            this.btnRegistrarEstacionamiento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegistrarEstacionamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarEstacionamiento.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnRegistrarEstacionamiento.IdleBorderThickness = 1;
+            this.btnRegistrarEstacionamiento.IdleCornerRadius = 20;
+            this.btnRegistrarEstacionamiento.IdleFillColor = System.Drawing.Color.White;
+            this.btnRegistrarEstacionamiento.IdleForecolor = System.Drawing.SystemColors.HotTrack;
+            this.btnRegistrarEstacionamiento.IdleLineColor = System.Drawing.SystemColors.HotTrack;
+            this.btnRegistrarEstacionamiento.Location = new System.Drawing.Point(367, 10);
+            this.btnRegistrarEstacionamiento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnRegistrarEstacionamiento.Name = "btnRegistrarEstacionamiento";
+            this.btnRegistrarEstacionamiento.Size = new System.Drawing.Size(116, 39);
+            this.btnRegistrarEstacionamiento.TabIndex = 13;
+            this.btnRegistrarEstacionamiento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnRegistrarEstacionamiento.Click += new System.EventHandler(this.btnRegistrarEstacionamiento_Click);
             // 
             // dashboard
             // 
@@ -880,5 +908,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnBusquedasss;
         private Bunifu.Framework.UI.BunifuThinButton2 btnsitios;
         private System.Windows.Forms.ComboBox comboBox1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnRegistrarEstacionamiento;
     }
 }
