@@ -45,8 +45,8 @@ namespace Presentacion
                 tipo = 5;
             }
             np.insertSOMETHING(nombre, apellido, email, direccion, cargo, usuario, contraseña,tipo );
-
-
+            MessageBox.Show("Se registro exitosamente");
+            this.Hide();
 
             /* clsNegPerson np = new clsNegPerson();
 

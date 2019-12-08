@@ -31,7 +31,10 @@ namespace Negocio
             daoperson.insertParkings(usid, nl, ubi, tari, luga, sao,ca);
 
         }
-
+        public void getnani_id(int idus)
+        {
+            daoperson.getnani_id(idus);
+        }
         public int IniciarSesion(string AliasUsuario, string Contraseña)
         {
             return daoperson.IniciarSesion(AliasUsuario,Contraseña);
@@ -41,12 +44,27 @@ namespace Negocio
         {
             return daoperson.GetAllcars();
         }
+        /*
+        public List<NombreEntiedad> GetNameus(int iduser) {
+            return daoperson.GetNameus(iduser);
+        }*/
+        /*
+        public NombreEntiedad GetById(int usId) {
+           return daoperson.GetById(usId);
+        }*/
 
         public DataTable findcars(String pa)
         {
             return daoperson.findcars(pa);
         }
+        public string getus(int idus)
+        {
+            return daoperson.getus(idus);
+        }
         
-
+        public string tipousuario(int idus)
+        {
+            return daoperson.tipousuario(idus);
+        }
     }
 }

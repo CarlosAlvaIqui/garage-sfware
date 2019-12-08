@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+
 namespace Datos
 {
     public class clsDaoPerson:clsDao
@@ -72,6 +73,116 @@ namespace Datos
 
             return dt;
         }
+
+        public void GetNameEstacionamiento()
+        {
+
+            con.Open();
+
+            String sql = "Select parkinLot_id,nombre_local from parkinLotd";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+
+
+            con.Close();
+
+        }
+
+        public void getnani_id(int idus)
+        {
+
+            con.Open();
+            String sql = "Select * from usuarios WHERE usuarios_id =" + idus;
+            SqlCommand cmd = new SqlCommand(sql, con);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+            con.Close();
+        }
+        public class NombreEntiedad
+        {
+            public int Id { get; set; }
+            public string Nombre { get; set; }
+        }
+        public string getus(int idus)
+        {
+
+            con.Open();
+
+            String sql = "Select username from usuarios where usuarios_id = "+ idus + ";";
+            SqlCommand cmd = new SqlCommand(sql, con);
+
+            var result = (cmd.ExecuteScalar());
+            string x = Convert.ToString(result);
+
+
+            con.Close();
+
+            return x;
+        }
+        
+        public string tipousuario(int idus)
+        {
+
+            con.Open();
+
+            String sql = "SELECT tipo_name FROM tipo_user INNER JOIN usuarios ON tipo_user.tipoUser_id = usuarios.tipoUser_id where usuarios.usuarios_id ="+ idus + ";";
+            SqlCommand cmd = new SqlCommand(sql, con);
+
+            var result = (cmd.ExecuteScalar());
+            string x = Convert.ToString(result);
+
+
+            con.Close();
+
+            return x;
+        }
+        /*
+        public  NombreEntiedad GetById(int usId)
+        {
+            NombreEntiedad entity = null;
+
+            
+               con.Open();
+
+                string sql = "SELECT username FROM usuarios WHERE usuarios_id =" + usId;
+
+                SqlCommand cmd = new SqlCommand(sql, con);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    entity  = new NombreEntiedad();
+                    entity.Nombre = Convert.ToString(reader["username"]);
+                }
+            
+            con.Close();
+            return entity;
+        }
+        */
+        /*
+        public List<NombreEntiedad> GetNameus(int iduser)
+        {
+            List<NombreEntiedad> result = new List<NombreEntiedad>();
+
+         
+                con.Open();
+            string sql = "SELECT username FROM usuarios WHERE usuarios_id =" + Convert.ToInt32(iduser) ;
+            SqlCommand cmd = new SqlCommand(sql, con);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                NombreEntiedad item = new NombreEntiedad();
+                
+                item.Nombre = Convert.ToString(reader["username"]);
+
+                result.Add(item);
+            }
+            con.Close();
+            return result;
+
+        }*/
 
         public void insertParkings(int usid,string nl, string ubi, float tari, int luga, float sao, int ca)
         {
@@ -177,6 +288,7 @@ namespace Datos
 
             con.Close();
         }
+  
         public int IniciarSesion(string AliasUsuario, string Contraseña)
         {
             SqlCommand cmd = new SqlCommand();

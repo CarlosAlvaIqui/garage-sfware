@@ -10,6 +10,7 @@ namespace Presentacion
     {
    
             public static int usuario_id;
-   
+        public static DateTime horaini;
+        public static DateTime horafinal;
     }
 }

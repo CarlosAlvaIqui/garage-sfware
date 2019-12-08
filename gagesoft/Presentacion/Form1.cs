@@ -41,7 +41,7 @@ namespace Presentacion
                 var mensaje = string.Format("Bienvenido {0}", txtUser.Text);
                 dashboard dhb = new dashboard();
                 dhb.Show();
-                
+                this.Hide();
                 GlobalVariablesform.usuario_id = agarra;
 
                 MessageBox.Show("Entrastes usuario : " + agarra);
@@ -59,6 +59,11 @@ namespace Presentacion
         {
             formulario_empleado ejl = new formulario_empleado();
             ejl.Show();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

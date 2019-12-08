@@ -7,19 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Negocio;
 
 namespace Presentacion
 {
     public partial class dashboard : Form
     {
+
         public dashboard()
         {
+
             InitializeComponent();
+
         }
 
         private void dashboard_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
@@ -38,6 +42,7 @@ namespace Presentacion
 
         private void btnclo_Click(object sender, EventArgs e)
         {
+
         }
 
         private void btncreateus_Click(object sender, EventArgs e)
@@ -54,8 +59,14 @@ namespace Presentacion
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+            int iduser = Presentacion.GlobalVariablesform.usuario_id;
 
-        }
+            clsNegPerson np = new clsNegPerson(); 
+            var getus = np.getus(iduser);
+            var tipous = np.tipousuario(iduser);
+            var lbl1 = lbluser.Text; 
+            lbl1 = getus;
+            }
 
         private void btnEstadisticas_Click(object sender, EventArgs e)
         {
@@ -66,6 +77,21 @@ namespace Presentacion
         {
             formulario_estacionamiento fe = new formulario_estacionamiento();
             fe.Show();
+        }
+
+        private void txtcomovoesta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbluser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

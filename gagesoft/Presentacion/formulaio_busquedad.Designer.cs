@@ -101,6 +101,7 @@
             this.btnlistarmecars.Size = new System.Drawing.Size(262, 73);
             this.btnlistarmecars.TabIndex = 34;
             this.btnlistarmecars.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnlistarmecars.Click += new System.EventHandler(this.btnlistarmecars_Click);
             // 
             // dgvcarsworks
             // 

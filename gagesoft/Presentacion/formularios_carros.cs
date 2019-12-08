@@ -35,7 +35,8 @@ namespace Presentacion
             var descripcion = txtDescrip.text;
             var propietario = txtPropietario.text;
             var tipoauto = 0;
-
+            var horini = DateTime.Now;
+            GlobalVariablesform.horaini = horini;
             if (txtcomcar.Text == "Carro") {
                 tipoauto = 1;
             } else if (txtcomcar.Text == "Moto") {
@@ -50,6 +51,7 @@ namespace Presentacion
 
             MessageBox.Show("Se guardo correctamente" + placa);
             np.insertcars(placa, descripcion,propietario,tipoauto);
+            this.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)

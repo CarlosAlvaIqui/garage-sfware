@@ -14,7 +14,7 @@ namespace Presentacion
     {
         public formulario_estacionamiento()
         {
-            InitializeComponent();
+            InitializeComponent();  
         }
 
         private void formulario_estacionamiento_Load(object sender, EventArgs e)
@@ -40,8 +40,14 @@ namespace Presentacion
             var iduser = Presentacion.GlobalVariablesform.usuario_id;
 
             np.insertParkings(iduser,nombrelocal, ubicacion, cobroxhora, lugares, saldo, coche_actuales);
+            MessageBox.Show("Se registro el estacionamiento");
+            this.Hide();
 
+        }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

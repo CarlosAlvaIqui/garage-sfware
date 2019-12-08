@@ -140,6 +140,7 @@
             this.label2.Size = new System.Drawing.Size(184, 41);
             this.label2.TabIndex = 0;
             this.label2.Text = "Bienvenido ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btncreateparkinglot
             // 
@@ -181,6 +182,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formulario_estacionamiento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formulario_estacionamiento";
             this.Load += new System.EventHandler(this.formulario_estacionamiento_Load);
             this.panel1.ResumeLayout(false);
