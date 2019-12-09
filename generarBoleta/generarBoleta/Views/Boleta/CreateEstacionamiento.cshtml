@@ -1,0 +1,58 @@
+﻿@model parkingLot
+@{
+    ViewBag.Title = "CreateEstacionamiento";
+}
+
+<h2>CreateEstacionamiento</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+<fieldset>
+    <legend>Estacionamiento ID</legend>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.parkingLot_id)
+    </div>
+    <div class="editor-field">
+        @*Html.EditorFor(model => model.CategoryID)*@
+        @*Html.ValidationMessageFor(model => model.CategoryID)*@
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.nombre_local)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.nombre_local)
+        @Html.ValidationMessageFor(model => model.nombre_local)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.ubicacion)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.ubicacion)
+        @Html.ValidationMessageFor(model => model.ubicacion)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.cobroHora)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.cobroHora)
+        @Html.ValidationMessageFor(model => model.cobroHora)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.lugares)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.lugares)
+        @Html.ValidationMessageFor(model => model.lugares)
+    </div>
+    <p>
+        <input type="submit" value="Create" />
+    </p>
+</fieldset>
+
+}
+<div>
+    @Html.ActionLink("Retornar a indezx", "Index")
+</div>

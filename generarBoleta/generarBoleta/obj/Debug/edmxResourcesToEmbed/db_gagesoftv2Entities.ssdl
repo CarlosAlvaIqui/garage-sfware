@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_gagesoftv2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="boleta">
+    <Key>
+      <PropertyRef Name="botela_id" />
+    </Key>
+    <Property Name="botela_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="parkingLot_id" Type="int" />
+    <Property Name="usuarios_id" Type="int" />
+    <Property Name="carros_id" Type="int" />
+    <Property Name="inicioHora" Type="datetime" />
+    <Property Name="finalHora" Type="datetime" />
+    <Property Name="monto" Type="float" />
+    <Property Name="descuento" Type="float" />
+    <Property Name="total" Type="float" />
+  </EntityType>
+  <EntityType Name="carros">
+    <Key>
+      <PropertyRef Name="car_id" />
+    </Key>
+    <Property Name="car_id" Type="int" Nullable="false" />
+    <Property Name="placa" Type="nvarchar" MaxLength="50" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="50" />
+    <Property Name="tipo" Type="nvarchar" MaxLength="50" />
+    <Property Name="propietario" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="empleados">
+    <Key>
+      <PropertyRef Name="empleados_id" />
+    </Key>
+    <Property Name="empleados_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="50" />
+    <Property Name="apellidos" Type="nvarchar" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="direccion" Type="nvarchar" MaxLength="50" />
+    <Property Name="cargo" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="parkingLot">
+    <Key>
+      <PropertyRef Name="parkingLot_id" />
+    </Key>
+    <Property Name="parkingLot_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="usuarios_id" Type="int" />
+    <Property Name="nombre_local" Type="nvarchar" MaxLength="50" />
+    <Property Name="ubicacion" Type="nvarchar" MaxLength="50" />
+    <Property Name="cobroHora" Type="float" />
+  </EntityType>
+  <EntityType Name="tipo_user">
+    <Key>
+      <PropertyRef Name="tipo_user_id" />
+    </Key>
+    <Property Name="tipo_user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="employer_type" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="usuarios">
+    <Key>
+      <PropertyRef Name="usuarios_id" />
+    </Key>
+    <Property Name="usuarios_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+    <Property Name="empleado_id" Type="int" />
+    <Property Name="tipoUser_id" Type="int" />
+  </EntityType>
+  <EntityContainer Name="db_gagesoftv2ModelStoreContainer">
+    <EntitySet Name="boleta" EntityType="Self.boleta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="carros" EntityType="Self.carros" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="empleados" EntityType="Self.empleados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="parkingLot" EntityType="Self.parkingLot" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tipo_user" EntityType="Self.tipo_user" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuarios" EntityType="Self.usuarios" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

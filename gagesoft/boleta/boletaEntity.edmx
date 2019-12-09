@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="db_gagesoftv2Model2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="boleta">
+          <Key>
+            <PropertyRef Name="botela_id" />
+          </Key>
+          <Property Name="botela_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="parkingLot_id" Type="int" />
+          <Property Name="usuarios_id" Type="int" />
+          <Property Name="carros_id" Type="int" />
+          <Property Name="inicioHora" Type="datetime" />
+          <Property Name="finalHora" Type="datetime" />
+          <Property Name="monto" Type="float" />
+          <Property Name="descuento" Type="float" />
+          <Property Name="total" Type="float" />
+        </EntityType>
+        <EntityType Name="carros">
+          <Key>
+            <PropertyRef Name="car_id" />
+          </Key>
+          <Property Name="car_id" Type="int" Nullable="false" />
+          <Property Name="placa" Type="nvarchar" MaxLength="50" />
+          <Property Name="descripcion" Type="nvarchar" MaxLength="50" />
+          <Property Name="tipo" Type="nvarchar" MaxLength="50" />
+          <Property Name="propietario" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="empleados">
+          <Key>
+            <PropertyRef Name="empleados_id" />
+          </Key>
+          <Property Name="empleados_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="50" />
+          <Property Name="apellidos" Type="nvarchar" MaxLength="50" />
+          <Property Name="email" Type="nvarchar" MaxLength="50" />
+          <Property Name="direccion" Type="nvarchar" MaxLength="50" />
+          <Property Name="cargo" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="parkingLot">
+          <Key>
+            <PropertyRef Name="parkingLot_id" />
+          </Key>
+          <Property Name="parkingLot_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="usuarios_id" Type="int" />
+          <Property Name="nombre_local" Type="nvarchar" MaxLength="50" />
+          <Property Name="ubicacion" Type="nvarchar" MaxLength="50" />
+          <Property Name="cobroHora" Type="float" />
+        </EntityType>
+        <EntityType Name="tipo_user">
+          <Key>
+            <PropertyRef Name="tipo_user_id" />
+          </Key>
+          <Property Name="tipo_user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="employer_type" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="usuarios">
+          <Key>
+            <PropertyRef Name="usuarios_id" />
+          </Key>
+          <Property Name="usuarios_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="password" Type="nvarchar" MaxLength="50" />
+          <Property Name="empleado_id" Type="int" />
+          <Property Name="tipoUser_id" Type="int" />
+        </EntityType>
+        <EntityContainer Name="db_gagesoftv2Model2StoreContainer">
+          <EntitySet Name="boleta" EntityType="Self.boleta" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="carros" EntityType="Self.carros" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="empleados" EntityType="Self.empleados" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="parkingLot" EntityType="Self.parkingLot" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tipo_user" EntityType="Self.tipo_user" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="usuarios" EntityType="Self.usuarios" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db_gagesoftv2Model2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="boleta">
+          <Key>
+            <PropertyRef Name="botela_id" />
+          </Key>
+          <Property Name="botela_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="parkingLot_id" Type="Int32" />
+          <Property Name="usuarios_id" Type="Int32" />
+          <Property Name="carros_id" Type="Int32" />
+          <Property Name="inicioHora" Type="DateTime" />
+          <Property Name="finalHora" Type="DateTime" />
+          <Property Name="monto" Type="Double" />
+          <Property Name="descuento" Type="Double" />
+          <Property Name="total" Type="Double" />
+        </EntityType>
+        <EntityType Name="carros">
+          <Key>
+            <PropertyRef Name="car_id" />
+          </Key>
+          <Property Name="car_id" Type="Int32" Nullable="false" />
+          <Property Name="placa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="propietario" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="empleados">
+          <Key>
+            <PropertyRef Name="empleados_id" />
+          </Key>
+          <Property Name="empleados_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cargo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="parkingLot">
+          <Key>
+            <PropertyRef Name="parkingLot_id" />
+          </Key>
+          <Property Name="parkingLot_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="usuarios_id" Type="Int32" />
+          <Property Name="nombre_local" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ubicacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cobroHora" Type="Double" />
+        </EntityType>
+        <EntityType Name="tipo_user">
+          <Key>
+            <PropertyRef Name="tipo_user_id" />
+          </Key>
+          <Property Name="tipo_user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="employer_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="usuarios">
+          <Key>
+            <PropertyRef Name="usuarios_id" />
+          </Key>
+          <Property Name="usuarios_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="empleado_id" Type="Int32" />
+          <Property Name="tipoUser_id" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="db_gagesoftv2Entities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="boleta" EntityType="Self.boleta" />
+          <EntitySet Name="carros" EntityType="Self.carros" />
+          <EntitySet Name="empleados" EntityType="Self.empleados" />
+          <EntitySet Name="parkingLot" EntityType="Self.parkingLot" />
+          <EntitySet Name="tipo_user" EntityType="Self.tipo_user" />
+          <EntitySet Name="usuarios" EntityType="Self.usuarios" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="db_gagesoftv2Model2StoreContainer" CdmEntityContainer="db_gagesoftv2Entities2">
+          <EntitySetMapping Name="boleta">
+            <EntityTypeMapping TypeName="db_gagesoftv2Model2.boleta">
+              <MappingFragment StoreEntitySet="boleta">
+                <ScalarProperty Name="botela_id" ColumnName="botela_id" />
+                <ScalarProperty Name="parkingLot_id" ColumnName="parkingLot_id" />
+                <ScalarProperty Name="usuarios_id" ColumnName="usuarios_id" />
+                <ScalarProperty Name="carros_id" ColumnName="carros_id" />
+                <ScalarProperty Name="inicioHora" ColumnName="inicioHora" />
+                <ScalarProperty Name="finalHora" ColumnName="finalHora" />
+                <ScalarProperty Name="monto" ColumnName="monto" />
+                <ScalarProperty Name="descuento" ColumnName="descuento" />
+                <ScalarProperty Name="total" ColumnName="total" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="carros">
+            <EntityTypeMapping TypeName="db_gagesoftv2Model2.carros">
+              <MappingFragment StoreEntitySet="carros">
+                <ScalarProperty Name="car_id" ColumnName="car_id" />
+                <ScalarProperty Name="placa" ColumnName="placa" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="tipo" ColumnName="tipo" />
+                <ScalarProperty Name="propietario" ColumnName="propietario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="empleados">
+            <EntityTypeMapping TypeName="db_gagesoftv2Model2.empleados">
+              <MappingFragment StoreEntitySet="empleados">
+                <ScalarProperty Name="empleados_id" ColumnName="empleados_id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellidos" ColumnName="apellidos" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="cargo" ColumnName="cargo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="parkingLot">
+            <EntityTypeMapping TypeName="db_gagesoftv2Model2.parkingLot">
+              <MappingFragment StoreEntitySet="parkingLot">
+                <ScalarProperty Name="parkingLot_id" ColumnName="parkingLot_id" />
+                <ScalarProperty Name="usuarios_id" ColumnName="usuarios_id" />
+                <ScalarProperty Name="nombre_local" ColumnName="nombre_local" />
+                <ScalarProperty Name="ubicacion" ColumnName="ubicacion" />
+                <ScalarProperty Name="cobroHora" ColumnName="cobroHora" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tipo_user">
+            <EntityTypeMapping TypeName="db_gagesoftv2Model2.tipo_user">
+              <MappingFragment StoreEntitySet="tipo_user">
+                <ScalarProperty Name="tipo_user_id" ColumnName="tipo_user_id" />
+                <ScalarProperty Name="employer_type" ColumnName="employer_type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usuarios">
+            <EntityTypeMapping TypeName="db_gagesoftv2Model2.usuarios">
+              <MappingFragment StoreEntitySet="usuarios">
+                <ScalarProperty Name="usuarios_id" ColumnName="usuarios_id" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="empleado_id" ColumnName="empleado_id" />
+                <ScalarProperty Name="tipoUser_id" ColumnName="tipoUser_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

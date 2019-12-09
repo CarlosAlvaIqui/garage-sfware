@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_gagesoftv2ModelStoreContainer" CdmEntityContainer="db_gagesoftv2Entities">
+    <EntitySetMapping Name="boleta">
+      <EntityTypeMapping TypeName="db_gagesoftv2Model.boleta">
+        <MappingFragment StoreEntitySet="boleta">
+          <ScalarProperty Name="botela_id" ColumnName="botela_id" />
+          <ScalarProperty Name="parkingLot_id" ColumnName="parkingLot_id" />
+          <ScalarProperty Name="usuarios_id" ColumnName="usuarios_id" />
+          <ScalarProperty Name="carros_id" ColumnName="carros_id" />
+          <ScalarProperty Name="inicioHora" ColumnName="inicioHora" />
+          <ScalarProperty Name="finalHora" ColumnName="finalHora" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="descuento" ColumnName="descuento" />
+          <ScalarProperty Name="total" ColumnName="total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="carros">
+      <EntityTypeMapping TypeName="db_gagesoftv2Model.carros">
+        <MappingFragment StoreEntitySet="carros">
+          <ScalarProperty Name="car_id" ColumnName="car_id" />
+          <ScalarProperty Name="placa" ColumnName="placa" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="propietario" ColumnName="propietario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="empleados">
+      <EntityTypeMapping TypeName="db_gagesoftv2Model.empleados">
+        <MappingFragment StoreEntitySet="empleados">
+          <ScalarProperty Name="empleados_id" ColumnName="empleados_id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidos" ColumnName="apellidos" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="parkingLot">
+      <EntityTypeMapping TypeName="db_gagesoftv2Model.parkingLot">
+        <MappingFragment StoreEntitySet="parkingLot">
+          <ScalarProperty Name="parkingLot_id" ColumnName="parkingLot_id" />
+          <ScalarProperty Name="usuarios_id" ColumnName="usuarios_id" />
+          <ScalarProperty Name="nombre_local" ColumnName="nombre_local" />
+          <ScalarProperty Name="ubicacion" ColumnName="ubicacion" />
+          <ScalarProperty Name="cobroHora" ColumnName="cobroHora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_user">
+      <EntityTypeMapping TypeName="db_gagesoftv2Model.tipo_user">
+        <MappingFragment StoreEntitySet="tipo_user">
+          <ScalarProperty Name="tipo_user_id" ColumnName="tipo_user_id" />
+          <ScalarProperty Name="employer_type" ColumnName="employer_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuarios">
+      <EntityTypeMapping TypeName="db_gagesoftv2Model.usuarios">
+        <MappingFragment StoreEntitySet="usuarios">
+          <ScalarProperty Name="usuarios_id" ColumnName="usuarios_id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="empleado_id" ColumnName="empleado_id" />
+          <ScalarProperty Name="tipoUser_id" ColumnName="tipoUser_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

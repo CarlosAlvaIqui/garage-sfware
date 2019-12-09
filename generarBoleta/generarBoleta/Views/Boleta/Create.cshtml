@@ -1,0 +1,72 @@
+﻿@using generarBoleta.Models;
+@model Tuple<automoviles,tipo_automoviles,boleta>
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Creacion de nuevo Auto</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+<fieldset>
+    <legend>Categories</legend>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Item1.carros_id)
+    </div>
+    <div class="editor-field">
+        @*Html.EditorFor(model => model.CategoryID)*@
+        @*Html.ValidationMessageFor(model => model.CategoryID)*@
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Item1.placa)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Item1.placa, new { @Name = "placa" })
+        @Html.ValidationMessageFor(model => model.Item1.placa)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Item1.descripcion)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Item1.descripcion, new { @Name = "descripcion" })
+        @Html.ValidationMessageFor(model => model.Item1.descripcion)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Item1.propietario)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Item1.propietario, new { @Name = "propietario" })
+        @Html.ValidationMessageFor(model => model.Item1.propietario)
+    </div>
+
+    <div>
+        @Html.DropDownList("tipo_carro_id", ViewData["tipo"] as SelectList)
+    </div>
+
+
+    <strong>Estacionamiento Actual</strong>
+    @Html.DropDownList("parkingLot_id", ViewData["local"] as SelectList, new { @id = "parkingLot_id" })
+
+
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Action
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+    <p>
+        <input type="submit" value="Create" />
+    </p>
+</fieldset>
+
+}
+<div>
+    @Html.ActionLink("Retornar a indezx", "Index")
+</div>
+

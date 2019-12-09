@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_gagesoftv2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="boleta">
+    <Key>
+      <PropertyRef Name="botela_id" />
+    </Key>
+    <Property Name="botela_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="parkingLot_id" Type="Int32" />
+    <Property Name="usuarios_id" Type="Int32" />
+    <Property Name="carros_id" Type="Int32" />
+    <Property Name="inicioHora" Type="DateTime" Precision="3" />
+    <Property Name="finalHora" Type="DateTime" Precision="3" />
+    <Property Name="monto" Type="Double" />
+    <Property Name="descuento" Type="Double" />
+    <Property Name="total" Type="Double" />
+  </EntityType>
+  <EntityType Name="carros">
+    <Key>
+      <PropertyRef Name="car_id" />
+    </Key>
+    <Property Name="car_id" Type="Int32" Nullable="false" />
+    <Property Name="placa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="propietario" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="empleados">
+    <Key>
+      <PropertyRef Name="empleados_id" />
+    </Key>
+    <Property Name="empleados_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cargo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="parkingLot">
+    <Key>
+      <PropertyRef Name="parkingLot_id" />
+    </Key>
+    <Property Name="parkingLot_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="usuarios_id" Type="Int32" />
+    <Property Name="nombre_local" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ubicacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cobroHora" Type="Double" />
+  </EntityType>
+  <EntityType Name="tipo_user">
+    <Key>
+      <PropertyRef Name="tipo_user_id" />
+    </Key>
+    <Property Name="tipo_user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="employer_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="usuarios">
+    <Key>
+      <PropertyRef Name="usuarios_id" />
+    </Key>
+    <Property Name="usuarios_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="empleado_id" Type="Int32" />
+    <Property Name="tipoUser_id" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="db_gagesoftv2Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="boleta" EntityType="Self.boleta" />
+    <EntitySet Name="carros" EntityType="Self.carros" />
+    <EntitySet Name="empleados" EntityType="Self.empleados" />
+    <EntitySet Name="parkingLot" EntityType="Self.parkingLot" />
+    <EntitySet Name="tipo_user" EntityType="Self.tipo_user" />
+    <EntitySet Name="usuarios" EntityType="Self.usuarios" />
+  </EntityContainer>
+</Schema>

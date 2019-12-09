@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_gagesoftv3Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="automoviles">
+    <Key>
+      <PropertyRef Name="carros_id" />
+    </Key>
+    <Property Name="carros_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="placa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="propietario" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tipo_carro_id" Type="Int32" />
+    <NavigationProperty Name="tipo_automoviles" Relationship="Self.FK_automoviles_tipo_automoviles" FromRole="automoviles" ToRole="tipo_automoviles" />
+    <NavigationProperty Name="boleta" Relationship="Self.FK_boleta_automoviles" FromRole="automoviles" ToRole="boleta" />
+  </EntityType>
+  <EntityType Name="boleta">
+    <Key>
+      <PropertyRef Name="botela_id" />
+    </Key>
+    <Property Name="botela_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="parkingLot_id" Type="Int32" />
+    <Property Name="usuarios_id" Type="Int32" />
+    <Property Name="carros_id" Type="Int32" />
+    <Property Name="inicioHora" Type="DateTime" Precision="3" />
+    <Property Name="finalHora" Type="DateTime" Precision="3" />
+    <Property Name="monto" Type="Double" />
+    <Property Name="descuento" Type="Double" />
+    <Property Name="total" Type="Double" />
+    <NavigationProperty Name="automoviles" Relationship="Self.FK_boleta_automoviles" FromRole="boleta" ToRole="automoviles" />
+    <NavigationProperty Name="parkingLot" Relationship="Self.FK_boleta_parkingLot" FromRole="boleta" ToRole="parkingLot" />
+    <NavigationProperty Name="usuarios" Relationship="Self.FK_boleta_usuarios" FromRole="boleta" ToRole="usuarios" />
+  </EntityType>
+  <EntityType Name="empleados">
+    <Key>
+      <PropertyRef Name="empleados_id" />
+    </Key>
+    <Property Name="empleados_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cargo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="usuarios" Relationship="Self.FK_usuarios_empleados" FromRole="empleados" ToRole="usuarios" />
+  </EntityType>
+  <EntityType Name="parkingLot">
+    <Key>
+      <PropertyRef Name="parkingLot_id" />
+    </Key>
+    <Property Name="parkingLot_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="usuarios_id" Type="Int32" />
+    <Property Name="nombre_local" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ubicacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cobroHora" Type="Double" />
+    <Property Name="lugares" Type="Int32" />
+    <Property Name="saldo" Type="Double" />
+    <Property Name="coches_actuales" Type="Int32" />
+    <Property Name="Pago_realizado" Type="Int32" />
+    <NavigationProperty Name="boleta" Relationship="Self.FK_boleta_parkingLot" FromRole="parkingLot" ToRole="boleta" />
+    <NavigationProperty Name="usuarios" Relationship="Self.FK_parkingLot_usuarios" FromRole="parkingLot" ToRole="usuarios" />
+  </EntityType>
+  <EntityType Name="tipo_automoviles">
+    <Key>
+      <PropertyRef Name="tipo_carro_id" />
+    </Key>
+    <Property Name="tipo_carro_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tipo_carro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="automoviles" Relationship="Self.FK_automoviles_tipo_automoviles" FromRole="tipo_automoviles" ToRole="automoviles" />
+  </EntityType>
+  <EntityType Name="tipo_user">
+    <Key>
+      <PropertyRef Name="tipoUser_id" />
+    </Key>
+    <Property Name="tipoUser_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tipo_name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="usuarios" Relationship="Self.FK_usuarios_tipo_user" FromRole="tipo_user" ToRole="usuarios" />
+  </EntityType>
+  <EntityType Name="usuarios">
+    <Key>
+      <PropertyRef Name="usuarios_id" />
+    </Key>
+    <Property Name="usuarios_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="empleado_id" Type="Int32" />
+    <Property Name="tipoUser_id" Type="Int32" />
+    <NavigationProperty Name="boleta" Relationship="Self.FK_boleta_usuarios" FromRole="usuarios" ToRole="boleta" />
+    <NavigationProperty Name="empleados" Relationship="Self.FK_usuarios_empleados" FromRole="usuarios" ToRole="empleados" />
+    <NavigationProperty Name="parkingLot" Relationship="Self.FK_parkingLot_usuarios" FromRole="usuarios" ToRole="parkingLot" />
+    <NavigationProperty Name="tipo_user" Relationship="Self.FK_usuarios_tipo_user" FromRole="usuarios" ToRole="tipo_user" />
+  </EntityType>
+  <Association Name="FK_automoviles_tipo_automoviles">
+    <End Role="tipo_automoviles" Type="Self.tipo_automoviles" Multiplicity="0..1" />
+    <End Role="automoviles" Type="Self.automoviles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_automoviles">
+        <PropertyRef Name="tipo_carro_id" />
+      </Principal>
+      <Dependent Role="automoviles">
+        <PropertyRef Name="tipo_carro_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_boleta_automoviles">
+    <End Role="automoviles" Type="Self.automoviles" Multiplicity="0..1" />
+    <End Role="boleta" Type="Self.boleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="automoviles">
+        <PropertyRef Name="carros_id" />
+      </Principal>
+      <Dependent Role="boleta">
+        <PropertyRef Name="carros_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_boleta_parkingLot">
+    <End Role="parkingLot" Type="Self.parkingLot" Multiplicity="0..1" />
+    <End Role="boleta" Type="Self.boleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="parkingLot">
+        <PropertyRef Name="parkingLot_id" />
+      </Principal>
+      <Dependent Role="boleta">
+        <PropertyRef Name="parkingLot_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_boleta_usuarios">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="0..1" />
+    <End Role="boleta" Type="Self.boleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="usuarios_id" />
+      </Principal>
+      <Dependent Role="boleta">
+        <PropertyRef Name="usuarios_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_usuarios_empleados">
+    <End Role="empleados" Type="Self.empleados" Multiplicity="0..1" />
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="empleados">
+        <PropertyRef Name="empleados_id" />
+      </Principal>
+      <Dependent Role="usuarios">
+        <PropertyRef Name="empleado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_parkingLot_usuarios">
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="0..1" />
+    <End Role="parkingLot" Type="Self.parkingLot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="usuarios_id" />
+      </Principal>
+      <Dependent Role="parkingLot">
+        <PropertyRef Name="usuarios_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_usuarios_tipo_user">
+    <End Role="tipo_user" Type="Self.tipo_user" Multiplicity="0..1" />
+    <End Role="usuarios" Type="Self.usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_user">
+        <PropertyRef Name="tipoUser_id" />
+      </Principal>
+      <Dependent Role="usuarios">
+        <PropertyRef Name="tipoUser_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="db_gagesoftv3Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="automoviles" EntityType="Self.automoviles" />
+    <EntitySet Name="boleta" EntityType="Self.boleta" />
+    <EntitySet Name="empleados" EntityType="Self.empleados" />
+    <EntitySet Name="parkingLot" EntityType="Self.parkingLot" />
+    <EntitySet Name="tipo_automoviles" EntityType="Self.tipo_automoviles" />
+    <EntitySet Name="tipo_user" EntityType="Self.tipo_user" />
+    <EntitySet Name="usuarios" EntityType="Self.usuarios" />
+    <AssociationSet Name="FK_automoviles_tipo_automoviles" Association="Self.FK_automoviles_tipo_automoviles">
+      <End Role="tipo_automoviles" EntitySet="tipo_automoviles" />
+      <End Role="automoviles" EntitySet="automoviles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_boleta_automoviles" Association="Self.FK_boleta_automoviles">
+      <End Role="automoviles" EntitySet="automoviles" />
+      <End Role="boleta" EntitySet="boleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_boleta_parkingLot" Association="Self.FK_boleta_parkingLot">
+      <End Role="parkingLot" EntitySet="parkingLot" />
+      <End Role="boleta" EntitySet="boleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_boleta_usuarios" Association="Self.FK_boleta_usuarios">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="boleta" EntitySet="boleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_usuarios_empleados" Association="Self.FK_usuarios_empleados">
+      <End Role="empleados" EntitySet="empleados" />
+      <End Role="usuarios" EntitySet="usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_parkingLot_usuarios" Association="Self.FK_parkingLot_usuarios">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="parkingLot" EntitySet="parkingLot" />
+    </AssociationSet>
+    <AssociationSet Name="FK_usuarios_tipo_user" Association="Self.FK_usuarios_tipo_user">
+      <End Role="tipo_user" EntitySet="tipo_user" />
+      <End Role="usuarios" EntitySet="usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

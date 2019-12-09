@@ -1,0 +1,83 @@
+﻿@model IEnumerable<generarBoleta.Models.dataFind>
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+</pre>
+<div class="col-xs-6">
+    
+</div>
+<div class="col-xs-6 text-right">
+    <h1>FACTURA</h1>
+    <h1><small>Boleta #001</small></h1>
+</div>
+
+<hr />
+
+<pre>Sección siguiente
+
+</pre>
+<div class="row">
+    <div class="col-xs-5">
+        <div class="panel panel-default">
+            @foreach (var item in Model)
+            {
+                <div class="panel-heading">
+
+                    <h4>De: @Html.DisplayFor(modelItem => item.propietario)</h4>
+
+
+                </div>
+                <div class="panel-body">
+                    Dirección : @Html.DisplayFor(modelItem => item.descripcion)
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<pre><!-- / fin de sección de datos del Cliente  -->
+Detalles de la factura aquí
+</pre>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                <h4>Servicio</h4>
+            </th>
+            <th>
+                <h4>Descripción</h4>
+            </th>
+            <th>
+                <h4>Hora Inicio</h4>
+            </th>
+            <th>
+                <h4>Placa</h4>
+            </th>
+            <th>
+                <h4>Sub-Total</h4>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>Parkeo</td>
+                <td class="text-right"> @Html.DisplayFor(modelItem => item.descripcion)</td>
+                <td class=" text-right ">@Html.DisplayFor(modelItem => item.inicioHora)</td>
+                <td class=" text-right ">@Html.DisplayFor(modelItem => item.placa)</td>
+                <td class=" text-right ">S/. @Html.DisplayFor(modelItem => item.total)</td>
+            </tr>
+        }
+        </tbody>
+</table>
+<pre>Sección Totales
+</pre>
+<div class="row text-left">
+    
+    <a href="#" class="btn btn-success">Pagar</a>
+ 
+</div>
+<pre>Sección detalles de pago
+

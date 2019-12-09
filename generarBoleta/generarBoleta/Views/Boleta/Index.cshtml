@@ -1,0 +1,79 @@
+﻿
+@model IEnumerable<generarBoleta.Models.dataFind>
+@{
+    ViewBag.Title = "Sistema de administracion de Vehiculos";
+}
+
+<h2>Busquedad de autos</h2>
+<p>
+    
+    @Html.ActionLink("Insertar nuevo Vehiculo", "Create")
+</p>
+
+<div id="result"></div>
+
+
+<br />
+<div>
+    @using (Ajax.BeginForm("SearchInfo", "Boleta", new AjaxOptions
+    {
+        UpdateTargetId = "divajax",
+        HttpMethod = "Post",
+        InsertionMode = InsertionMode.Replace
+    }))
+    {
+        <div class="row">
+            <div class="col-lg-6">
+                <span class="input-group-btn">
+                    <button type="submit" onclick="location.href='@Url.Action("CreateEstacionamiento", "Boleta")'" name="btnsearch" class="btn btn-success" value="Search">Crear Nuevo Estacionamiento</button>
+                </span>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" name="txtname" class="form-control">
+                    <span class="input-group-btn">
+                        <button type="submit" name="btnsearch" class="btn btn-info" value="Search">Buscar</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    }
+</div>
+<br />
+<div id="divajax">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+
+        <div class="col-sm-4">
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <center><strong>@Html.DisplayFor(modelItem => item.placa)</strong></center>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Propietario: </strong>@Html.DisplayFor(modelItem => item.propietario)</h5>
+                    <p class="card-text"><strong>Descripcion</strong>@Html.DisplayFor(modelItem => item.descripcion)</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Boleta ID:</strong>@Html.DisplayFor(modelItem => item.boleta_id)</li>
+                    <li class="list-group-item"><strong>Hora Inicio:</strong> @Html.DisplayFor(modelItem => item.inicioHora)</li>
+                    <li class="list-group-item"><strong>Final:</strong> @Html.DisplayFor(modelItem => item.finalHora)</li>
+
+                    <li class="list-group-item"><strong>Total:</strong> @Html.DisplayFor(modelItem => item.total)</li>
+
+                </ul>
+                <div class="card-body">
+                    <a href="@Url.Action("Details", "Boleta", new { id = item.boleta_id })" class="btn btn-primary">Detalles</a>
+                    <a href="#" class="btn btn-success">Pagado</a>
+                    <a href="#" class="btn btn-danger">Borrar</a>
+                </div>
+            </div>
+        </div>
+
+        }
+    </div>
+    
+    </div>
